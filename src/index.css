@@ -9,32 +9,45 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 35% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 35% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 35% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* AryaCyber Brand Colors */
+    --primary: 207 92% 32%; /* #0865A2 */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 207 69% 27%; /* #144E7B */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --dark: 211 54% 20%; /* #143151 */
+    --dark-foreground: 0 0% 100%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --mid: 207 61% 44%; /* #2E7EB2 */
+    --mid-foreground: 0 0% 100%;
+
+    --soft: 207 34% 85%; /* #C9DCE8 */
+    --soft-foreground: 211 54% 20%;
+
+    --light-bg: 215 100% 98%; /* #F8FBFF */
+    --light-bg-foreground: 211 54% 20%;
+
+    --muted: 207 34% 85%;
+    --muted-foreground: 211 35% 45%;
+
+    --accent: 207 61% 44%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 207 34% 85%;
+    --input: 207 34% 85%;
+    --ring: 207 92% 32%;
 
     --radius: 0.5rem;
 
@@ -101,5 +114,50 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
+
+@layer components {
+  .hero-heading {
+    @apply text-dark font-bold leading-tight;
+    font-size: clamp(1.75rem, 5vw, 3rem);
+  }
+
+  .section-heading {
+    @apply text-dark font-semibold leading-tight;
+    font-size: clamp(1.375rem, 3vw, 2rem);
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-mid focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-primary text-primary hover:bg-primary/10 px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-mid focus:ring-offset-2;
+  }
+
+  .card-service {
+    @apply bg-card border border-border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200;
+  }
+
+  .nav-link {
+    @apply text-foreground hover:text-primary transition-colors duration-200 relative;
+  }
+
+  .nav-link::after {
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+    content: '';
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
   }
 }

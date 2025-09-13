@@ -27,6 +27,23 @@ export default {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        // AryaCyber Brand Colors
+        dark: {
+          DEFAULT: "hsl(var(--dark))",
+          foreground: "hsl(var(--dark-foreground))",
+        },
+        mid: {
+          DEFAULT: "hsl(var(--mid))",
+          foreground: "hsl(var(--mid-foreground))",
+        },
+        soft: {
+          DEFAULT: "hsl(var(--soft))",
+          foreground: "hsl(var(--soft-foreground))",
+        },
+        "light-bg": {
+          DEFAULT: "hsl(var(--light-bg))",
+          foreground: "hsl(var(--light-bg-foreground))",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
