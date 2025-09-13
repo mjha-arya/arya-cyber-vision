@@ -131,7 +131,7 @@ All colors MUST be HSL.
     --eagle-width: clamp(224px, 32vw, 384px);
     --eagle-top: clamp(12px, 2.5vw, 28px);
     --eagle-left: clamp(8px, 2vw, 24px);
-    --eagle-gap: 20px; /* Exact 20px gap after logo */
+    --eagle-gap: 10px; /* 10px gap after logo */
 
     /* Reduced shield */
     --shield-width: clamp(160px, 22vw, 280px);
