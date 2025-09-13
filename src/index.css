@@ -126,9 +126,40 @@ All colors MUST be HSL.
 }
 
 @layer components {
+  :root {
+    /* Eagle logo - 4× size */
+    --eagle-width: clamp(224px, 32vw, 384px);
+    --eagle-top: clamp(12px, 2.5vw, 28px);
+    --eagle-left: clamp(8px, 2vw, 24px);
+    --eagle-gap: clamp(12px, 2vw, 24px);
+
+    /* Reduced shield */
+    --shield-width: clamp(160px, 22vw, 280px);
+    --shield-right: clamp(8px, 2vw, 24px);
+
+    /* Safe zones to prevent overlap */
+    --safe-left: calc(var(--eagle-width) + var(--eagle-left) + var(--eagle-gap));
+    --safe-right: calc(var(--shield-width) + var(--shield-right) + 16px);
+
+    /* Content sizing */
+    --content-max: clamp(560px, 62vw, 880px);
+    --h1-size: clamp(28px, 5.2vw, 44px);
+    --p-size: clamp(16px, 1.6vw, 18px);
+  }
+
+  .hero {
+    position: relative;
+    min-height: clamp(520px, 68vh, 760px);
+    display: grid;
+    align-items: center;
+    overflow: visible;
+  }
+
   .hero-heading {
     @apply text-dark font-bold leading-tight;
-    font-size: clamp(1.75rem, 5vw, 3rem);
+    font-size: var(--h1-size);
+    line-height: 1.15;
+    margin: 0 0 0.5em 0;
   }
 
   .section-heading {
@@ -136,6 +167,59 @@ All colors MUST be HSL.
     font-size: clamp(1.375rem, 3vw, 2rem);
   }
 
+  /* Golden eagle - 4× size, top-left */
+  .hero__mark--tl {
+    position: absolute;
+    top: var(--eagle-top);
+    left: var(--eagle-left);
+    width: var(--eagle-width);
+    height: auto;
+    opacity: 1;
+    mix-blend-mode: normal;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+  }
+
+  /* Right-side shield - reduced, positioned right */
+  .hero__shield {
+    position: absolute;
+    right: var(--shield-right);
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--shield-width);
+    height: auto;
+    object-fit: contain;
+    opacity: 0.8;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+    border-radius: 1rem;
+  }
+
+  /* Centered content with safe zones */
+  .hero__content {
+    position: relative;
+    z-index: 2;
+    max-width: var(--content-max);
+    margin-inline: auto;
+    padding-left: max(var(--safe-left), 24px);
+    padding-right: max(var(--safe-right), 24px);
+    text-align: left;
+    space-y: 2rem;
+  }
+
+  .hero__content p {
+    font-size: var(--p-size);
+    line-height: 1.6;
+  }
+
+  .btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(10px, 1.6vw, 16px);
+    margin-top: 2rem;
+  }
   .btn-primary {
     @apply bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-mid focus:ring-offset-2;
   }
@@ -161,25 +245,39 @@ All colors MUST be HSL.
     @apply w-full;
   }
 
-  .hero__mark--tl {
-    @apply absolute pointer-events-none select-none;
-    top: clamp(12px, 2.5vw, 28px);
-    left: clamp(8px, 1.5vw, 20px);
-    width: clamp(44px, 7vw, 80px);
-    opacity: 1;
-    mix-blend-mode: normal;
-    z-index: 0;
+  /* Responsive refinements */
+  @media (max-width: 1024px) {
+    :root {
+      --h1-size: clamp(26px, 5vw, 40px);
+      --content-max: clamp(520px, 72vw, 760px);
+    }
   }
 
-  @media (max-width: 1024px) {
-    .hero__mark--tl {
-      width: clamp(40px, 8vw, 72px);
+  @media (max-width: 768px) {
+    :root {
+      --h1-size: clamp(24px, 6vw, 36px);
+      --p-size: clamp(15px, 2.2vw, 17px);
+    }
+    .hero {
+      min-height: clamp(560px, 72vh, 820px);
     }
   }
 
   @media (max-width: 640px) {
-    .hero__mark--tl {
-      width: clamp(36px, 12vw, 64px);
+    :root {
+      --h1-size: clamp(22px, 6.8vw, 32px);
+      --p-size: clamp(14px, 2.8vw, 16px);
+      --content-max: clamp(440px, 86vw, 640px);
     }
+    .hero__content {
+      padding-left: max(var(--safe-left), 20px);
+      padding-right: max(var(--safe-right), 20px);
+    }
+  }
+
+  /* Prevent overlap on interactive elements */
+  .hero__content a, .hero__content button, .hero__content .btn-row {
+    position: relative;
+    z-index: 3;
   }
 }
