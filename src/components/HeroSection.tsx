@@ -1,11 +1,12 @@
 import { Button } from '@/components/ui/button';
 import { Award, Shield, CheckCircle } from 'lucide-react';
 import heroImage from '@/assets/hero-cyber-security.jpg';
+import aryaCyberLogo from '@/assets/arya-cyber-logo.png';
 
 const HeroSection = () => {
   return (
-    <section id="home" className="py-20 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="home" className="py-20 bg-background relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <div className="space-y-8">
@@ -57,6 +58,14 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+      
+      {/* Watermark Logo */}
+      <img
+        src={aryaCyberLogo}
+        alt=""
+        aria-hidden="true"
+        className="hero__mark"
+      />
     </section>
   );
 };
