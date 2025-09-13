@@ -141,9 +141,9 @@ All colors MUST be HSL.
     --safe-left: calc(var(--eagle-width) + var(--eagle-left) + var(--eagle-gap));
     --safe-right: calc(var(--shield-width) + var(--shield-right) + 16px);
 
-    /* Content sizing */
+    /* Content sizing - h1 reduced by 20% */
     --content-max: clamp(560px, 62vw, 880px);
-    --h1-size: clamp(28px, 5.2vw, 44px);
+    --h1-size: clamp(22.4px, 4.16vw, 35.2px);
     --p-size: clamp(16px, 1.6vw, 18px);
   }
 
@@ -167,7 +167,7 @@ All colors MUST be HSL.
     font-size: clamp(1.375rem, 3vw, 2rem);
   }
 
-  /* Golden eagle - 4× size, top-left */
+  /* Golden eagle - reduced to 75% of 4× size, top-left */
   .hero__mark--tl {
     position: absolute;
     top: var(--eagle-top);
@@ -179,6 +179,8 @@ All colors MUST be HSL.
     pointer-events: none;
     user-select: none;
     z-index: 0;
+    transform-origin: top left;
+    transform: scale(0.75);
   }
 
   /* Right-side shield - reduced, positioned right */
@@ -245,17 +247,17 @@ All colors MUST be HSL.
     @apply w-full;
   }
 
-  /* Responsive refinements */
+  /* Responsive refinements - h1 reduced by 20% across breakpoints */
   @media (max-width: 1024px) {
     :root {
-      --h1-size: clamp(26px, 5vw, 40px);
+      --h1-size: clamp(20.8px, 4vw, 32px);
       --content-max: clamp(520px, 72vw, 760px);
     }
   }
 
   @media (max-width: 768px) {
     :root {
-      --h1-size: clamp(24px, 6vw, 36px);
+      --h1-size: clamp(19.2px, 4.8vw, 28.8px);
       --p-size: clamp(15px, 2.2vw, 17px);
     }
     .hero {
@@ -265,7 +267,7 @@ All colors MUST be HSL.
 
   @media (max-width: 640px) {
     :root {
-      --h1-size: clamp(22px, 6.8vw, 32px);
+      --h1-size: clamp(17.6px, 5.44vw, 25.6px);
       --p-size: clamp(14px, 2.8vw, 16px);
       --content-max: clamp(440px, 86vw, 640px);
     }
