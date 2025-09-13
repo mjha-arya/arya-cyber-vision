@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 ml-8 sm:ml-12 lg:ml-16">
             <h1 className="hero-heading">
               Proactive Cyber Defense for Modern Businesses
             </h1>
