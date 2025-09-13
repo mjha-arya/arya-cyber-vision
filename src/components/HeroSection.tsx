@@ -59,12 +59,12 @@ const HeroSection = () => {
         </div>
       </div>
       
-      {/* Watermark Logo */}
+      {/* Top-left Logo */}
       <img
         src={aryaCyberLogo}
         alt=""
         aria-hidden="true"
-        className="hero__mark"
+        className="hero__mark--tl"
       />
     </section>
   );
