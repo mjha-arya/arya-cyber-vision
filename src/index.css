@@ -163,9 +163,9 @@ All colors MUST be HSL.
 
   .hero__mark--tl {
     @apply absolute pointer-events-none select-none;
-    top: clamp(16px, 3vw, 32px);
-    left: clamp(16px, 3vw, 32px);
-    width: clamp(224px, 32vw, 384px);
+    top: clamp(12px, 2.5vw, 28px);
+    left: clamp(8px, 1.5vw, 20px);
+    width: clamp(44px, 7vw, 80px);
     opacity: 1;
     mix-blend-mode: normal;
     z-index: 0;
@@ -173,13 +173,13 @@ All colors MUST be HSL.
 
   @media (max-width: 1024px) {
     .hero__mark--tl {
-      width: clamp(192px, 40vw, 336px);
+      width: clamp(40px, 8vw, 72px);
     }
   }
 
   @media (max-width: 640px) {
     .hero__mark--tl {
-      width: clamp(160px, 48vw, 288px);
+      width: clamp(36px, 12vw, 64px);
     }
   }
 }

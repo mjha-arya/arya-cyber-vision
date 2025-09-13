@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Award, Shield, CheckCircle } from 'lucide-react';
 import heroImage from '@/assets/hero-cyber-security.jpg';
-import aryaCyberLogo from '@/assets/arya-cyber-logo.png';
+import uploadedLogo from '@/assets/uploaded-logo.png';
 
 const HeroSection = () => {
   return (
@@ -61,7 +61,7 @@ const HeroSection = () => {
       
       {/* Top-left Logo */}
       <img
-        src={aryaCyberLogo}
+        src={uploadedLogo}
         alt=""
         aria-hidden="true"
         className="hero__mark--tl"
