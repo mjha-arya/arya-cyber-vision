@@ -127,28 +127,24 @@ All colors MUST be HSL.
 
 @layer components {
   :root {
-    /* Spacing rule */
-    --gap-after-eagle: 20px;
-    
-    /* Eagle logo positioning */
+    /* Eagle logo - 4× size */
     --eagle-width: clamp(224px, 32vw, 384px);
     --eagle-top: clamp(12px, 2.5vw, 28px);
     --eagle-left: clamp(8px, 2vw, 24px);
+    --eagle-gap: 10px; /* 10px gap after logo */
 
-    /* Shield enlarged to 3x */
-    --shield-width: clamp(480px, 66vw, 840px); /* 3x the original size */
+    /* Reduced shield */
+    --shield-width: clamp(160px, 22vw, 280px);
     --shield-right: clamp(8px, 2vw, 24px);
-    --shield-scale: 3;
 
-    /* Safe zones to prevent overlap */
-    --safe-left: calc(var(--eagle-width) + var(--eagle-left) + var(--gap-after-eagle));
-    --safe-right: calc(var(--shield-width) * 0.5 + var(--shield-right) + 16px);
+    /* Safe zones to position content exactly 20px after eagle */
+    --safe-left: calc(var(--eagle-width) + var(--eagle-left) + var(--eagle-gap) - 60px);
+    --safe-right: calc(var(--shield-width) + var(--shield-right) + 16px);
 
-    /* Typography scaling - increased by 1.5x */
+    /* Content sizing - h1 reduced by 20% */
     --content-max: clamp(560px, 62vw, 880px);
-    --h1-size: clamp(33.6px, 6.24vw, 52.8px); /* 1.5x original */
-    --p-size: clamp(24px, 2.4vw, 27px); /* 1.5x original */
-    --btn-size: clamp(18px, 1.8vw, 21px); /* 1.5x original */
+    --h1-size: clamp(22.4px, 4.16vw, 35.2px);
+    --p-size: clamp(16px, 1.6vw, 18px);
   }
 
   .hero {
@@ -187,14 +183,13 @@ All colors MUST be HSL.
     transform: scale(0.75);
   }
 
-  /* Right-side shield - enlarged to 3x, anchored to right */
+  /* Right-side shield - reduced, positioned right */
   .hero__shield {
     position: absolute;
     right: var(--shield-right);
     top: 50%;
-    transform-origin: right center;
-    transform: translateY(-50%) scale(var(--shield-scale));
-    width: clamp(160px, 22vw, 280px); /* Original size before scaling */
+    transform: translateY(-50%);
+    width: var(--shield-width);
     height: auto;
     object-fit: contain;
     opacity: 0.8;
@@ -229,12 +224,10 @@ All colors MUST be HSL.
   }
   .btn-primary {
     @apply bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-mid focus:ring-offset-2;
-    font-size: var(--btn-size);
   }
 
   .btn-secondary {
     @apply border-2 border-primary text-primary hover:bg-primary/10 px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-mid focus:ring-offset-2;
-    font-size: var(--btn-size);
   }
 
   .card-service {
@@ -254,21 +247,18 @@ All colors MUST be HSL.
     @apply w-full;
   }
 
-  /* Responsive refinements - all scaled by 1.5x */
+  /* Responsive refinements - h1 reduced by 20% across breakpoints */
   @media (max-width: 1024px) {
     :root {
-      --h1-size: clamp(31.2px, 6vw, 48px); /* 1.5x original */
-      --p-size: clamp(22.5px, 3.3vw, 25.5px); /* 1.5x original */
-      --btn-size: clamp(17px, 2.7vw, 19.5px); /* 1.5x original */
+      --h1-size: clamp(20.8px, 4vw, 32px);
       --content-max: clamp(520px, 72vw, 760px);
     }
   }
 
   @media (max-width: 768px) {
     :root {
-      --h1-size: clamp(28.8px, 7.2vw, 43.2px); /* 1.5x original */
-      --p-size: clamp(22.5px, 3.3vw, 25.5px); /* 1.5x original */
-      --btn-size: clamp(16.5px, 2.4vw, 18px); /* 1.5x original */
+      --h1-size: clamp(19.2px, 4.8vw, 28.8px);
+      --p-size: clamp(15px, 2.2vw, 17px);
     }
     .hero {
       min-height: clamp(560px, 72vh, 820px);
@@ -277,9 +267,8 @@ All colors MUST be HSL.
 
   @media (max-width: 640px) {
     :root {
-      --h1-size: clamp(26.4px, 8.16vw, 38.4px); /* 1.5x original */
-      --p-size: clamp(21px, 4.2vw, 24px); /* 1.5x original */
-      --btn-size: clamp(15px, 2.1vw, 16.5px); /* 1.5x original */
+      --h1-size: clamp(17.6px, 5.44vw, 25.6px);
+      --p-size: clamp(14px, 2.8vw, 16px);
       --content-max: clamp(440px, 86vw, 640px);
     }
     .hero__content {
