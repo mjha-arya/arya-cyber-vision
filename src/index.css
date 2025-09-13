@@ -131,13 +131,13 @@ All colors MUST be HSL.
     --eagle-width: clamp(224px, 32vw, 384px);
     --eagle-top: clamp(12px, 2.5vw, 28px);
     --eagle-left: clamp(8px, 2vw, 24px);
-    --eagle-gap: clamp(12px, 2vw, 24px);
+    --eagle-gap: 20px; /* Exact 20px gap after logo */
 
     /* Reduced shield */
     --shield-width: clamp(160px, 22vw, 280px);
     --shield-right: clamp(8px, 2vw, 24px);
 
-    /* Safe zones to prevent overlap */
+    /* Safe zones to position content exactly 20px after eagle */
     --safe-left: calc(var(--eagle-width) + var(--eagle-left) + var(--eagle-gap));
     --safe-right: calc(var(--shield-width) + var(--shield-right) + 16px);
 
@@ -199,13 +199,13 @@ All colors MUST be HSL.
     border-radius: 1rem;
   }
 
-  /* Centered content with safe zones */
+  /* Content aligned exactly 20px after eagle's right edge */
   .hero__content {
     position: relative;
     z-index: 2;
     max-width: var(--content-max);
-    margin-inline: auto;
-    padding-left: max(var(--safe-left), 24px);
+    margin-left: var(--safe-left);
+    margin-right: auto;
     padding-right: max(var(--safe-right), 24px);
     text-align: left;
     space-y: 2rem;
