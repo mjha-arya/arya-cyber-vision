@@ -138,7 +138,7 @@ All colors MUST be HSL.
     --shield-right: clamp(8px, 2vw, 24px);
 
     /* Safe zones to position content exactly 20px after eagle */
-    --safe-left: calc(var(--eagle-width) + var(--eagle-left) + var(--eagle-gap));
+    --safe-left: calc(var(--eagle-width) + var(--eagle-left) + var(--eagle-gap) - 30px);
     --safe-right: calc(var(--shield-width) + var(--shield-right) + 16px);
 
     /* Content sizing - h1 reduced by 20% */
