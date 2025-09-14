@@ -60,7 +60,7 @@ const AboutUs = () => {
         </div>
       </header>
 
-      <main className=" px-4 sm:px-10 lg:px-12 pt-[12px] pb-12">
+      <main className=" px-4 sm:px-16 lg:px-12 pt-[12px] pb-12">
         {/* Hero - Founder Bio */}
         <section className="mb-4">
           <div className="grid md:grid-cols-[2fr_1fr] gap-8 items-center">
