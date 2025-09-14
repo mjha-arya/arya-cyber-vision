@@ -45,9 +45,9 @@ const TestimonialSection = () => {
                 <div className="flex justify-between items-start">
                   <div>
                     <cite className="font-semibold text-dark not-italic">
-                      Steve, Cloud Sec Ltd
+                      Steve,Cloud Sec Ltd
                     </cite>
-                    <p className="text-muted-foreground text-sm">
+                    <p className="font-semibold text-dark not-italic">
                       Singapore
                     </p>
                   </div>
@@ -55,7 +55,7 @@ const TestimonialSection = () => {
                     <div className="text-primary font-semibold text-lg">
                       Enhanced security posture
                     </div>
-                    <div className="text-muted-foreground text-sm">
+                    <div className="text-primary font-semibold text-lg">
                       in Under tight deadlines
                     </div>
                   </div>
