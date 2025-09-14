@@ -221,8 +221,10 @@ const Capabilities = () => {
             <p className="text-muted-foreground mb-6">
               Get insights into your organization's security posture with our complimentary assessment
             </p>
-            <Button className="btn-primary" size="lg">
-              Book Your Free Consultation Call Now
+            <Button className="btn-primary" size="lg" asChild>
+              <a href="https://forms.gle/Rg1Y6zaobDXizAgk7" target="_blank" rel="noopener noreferrer">
+                Book Your Free Consultation Call Now
+              </a>
             </Button>
           </div>
         </div>
