@@ -63,8 +63,13 @@ const AboutUs = () => {
               />
             </div>
             <h1 className="text-3xl font-bold text-white">About Us</h1>
-            <div className="w-20 h-20 rounded-full bg-muted flex items-center justify-center">
-              <span className="text-muted-foreground text-sm">Founder Photo</span>
+            <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-primary">
+              <img 
+                src="/src/assets/founder-photo.png" 
+                alt="Manish Jha, Founder of Arya Cyber Security Solutions"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
