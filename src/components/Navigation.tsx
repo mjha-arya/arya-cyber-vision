@@ -86,7 +86,7 @@ const Navigation = () => {
               ))}
               <Button variant="orange" className="w-full mt-4" asChild>
                 <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
-                  Check out the Free 7-Minute Quick Cyber Security Risk Assessment
+                  Free 7-Minute Quick Cyber Security Risk Assessment
                 </a>
               </Button>
             </div>
