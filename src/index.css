@@ -177,14 +177,33 @@ All colors MUST be HSL.
   /* Golden eagle - positioned top-left */
   .hero__mark--tl {
     position: absolute;
-    top: clamp(12px, 2.5vw, 28px);
-    left: calc(clamp(8px, 2vw, 24px) + 40px);
-    width: clamp(224px, 32vw, 384px);
-    height: auto;
-    opacity: 1;
-    mix-blend-mode: normal;
-    transform-origin: top left;
-    transform: scale(0.8775);
+    top: clamp(20px, 3vw, 40px);
+    left: clamp(20px, 3vw, 40px);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    z-index: 1;
+  }
+
+  .hero__arya {
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 700;
+    color: hsl(var(--primary));
+    line-height: 1;
+  }
+
+  .hero__cyber-security {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .hero__cyber-security span {
+    font-size: clamp(14px, 2vw, 20px);
+    font-weight: 600;
+    color: hsl(var(--primary));
+    line-height: 1;
   }
 
   /* Badges alignment stack */
