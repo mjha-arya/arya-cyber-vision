@@ -1,16 +1,17 @@
 import { Button } from '@/components/ui/button';
 import { Award, Shield, CheckCircle } from 'lucide-react';
-import aryaLogo from '@/assets/arya-logo.png';
+import heroImage from '@/assets/hero-cyber-security.jpg';
+import uploadedLogo from '@/assets/uploaded-logo.png';
 
 const HeroSection = () => {
   return (
     <section id="home" className="hero py-20 bg-background relative">
-      {/* Arya Logo - Top Left */}
+      {/* Golden Eagle - Top Left */}
       <img
-        src={aryaLogo}
+        src={uploadedLogo}
         alt=""
         aria-hidden="true"
-        className="hero__logo"
+        className="hero__mark--tl"
       />
       
 
