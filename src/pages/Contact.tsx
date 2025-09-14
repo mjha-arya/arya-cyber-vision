@@ -39,10 +39,10 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Phone</h3>
               <a 
-                href="tel:+44123456789"
+                href="tel:+447984130671"
                 className="text-primary hover:text-primary/80 transition-colors"
               >
-                +44 (0) 123 456 7890
+                +44 7984130671
               </a>
             </div>
             
@@ -53,12 +53,12 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Website</h3>
               <a 
-                href="https://aryacyber.com"
+                href="https://aryacybersec.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:text-primary/80 transition-colors"
               >
-                aryacyber.com
+                aryacybersec.com
               </a>
             </div>
           </div>
