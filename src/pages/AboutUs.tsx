@@ -63,7 +63,7 @@ const AboutUs = () => {
       {/* Founder Section */}
       <section className="bg-muted py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary mx-auto mb-4">
+          <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-primary mx-auto mb-4">
             <img 
               src="/src/assets/founder-photo.png" 
               alt="Manish Jha, Founder of Arya Cyber Security Solutions"
