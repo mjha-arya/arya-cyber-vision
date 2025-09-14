@@ -58,7 +58,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
                 <a href="mailto:manish@aryacybersec.com" className="text-base-plus text-dark-foreground/80 hover:text-primary transition-colors">
-                  hello@aryacyber.com
+                  manish@aryacybersec.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
@@ -75,7 +75,7 @@ const Footer = () => {
         <div className="border-t border-dark-foreground/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm-plus text-dark-foreground/60">
-              © {currentYear} AryaCyber Security Solutions. All rights reserved.
+              © {currentYear} Arya Cyber Security Solutions. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-sm-plus text-dark-foreground/60 hover:text-primary transition-colors">
