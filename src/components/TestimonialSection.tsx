@@ -4,7 +4,7 @@ const TestimonialSection = () => {
   const testimonials = [
     {
       quote: "Arya Cyber Security Consulting exceeded our expectations by delivering a highly complex project under extremely stringent timelines without compromising on quality. Their team demonstrated exceptional technical expertise, clear communication, and a proactive approach to problem-solving throughout the engagement. The result was a seamless implementation that not only met but enhanced our security posture, enabling us to stay compliant and operational under tight deadlines.",
-      author: "Steve",
+      author: "Steve Kennedy",
       role: "",
       company: "Cloud Sec Ltd, Singapore",
       outcome: "Enhanced security posture",
