@@ -12,7 +12,7 @@ const Navigation = () => {
     { name: 'Services', href: '/services', isRoute: true },
     { name: 'Capabilities', href: '/capabilities', isRoute: true },
     { name: 'About Us', href: '/about-us', isRoute: true },
-    { name: 'Contact', href: '#contact', isRoute: false },
+    { name: 'Contact', href: '/contact', isRoute: true },
   ];
 
   const renderNavItem = (item: any) => {
