@@ -65,7 +65,7 @@ const AboutUs = () => {
         <section className="mb-4">
           <h2 className="text-2xl font-bold text-foreground mb-4">About the Founder</h2>
           <div className="grid md:grid-cols-[2fr_1fr] gap-8 items-center">
-            <div className="-mt-[380px] max-w-6xl">
+            <div className="-mt-[410px] max-w-6xl">
               <p className="text-lg leading-relaxed text-foreground">
                 I'm Manish Jha, a SecOps architect with 9+ years securing enterprises across 120+ countries—from leading banks and insurers to media, legal, and energy majors. I build and scale incident response, threat hunting, and cloud-first security that boards trust. My vision: turn security into measurable business value—cut MTTD/MTTR, accelerate audits, and enable faster, safer growth.
               </p>
