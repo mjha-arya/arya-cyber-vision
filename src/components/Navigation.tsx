@@ -8,12 +8,11 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Home', href: '/Home', isRoute: true },
-    { name: 'Services', href: '/services', isRoute: true },
+    { name: 'Home', href: '/', isRoute: true },
+    { name: 'Services', href: '#services', isRoute: false },
     { name: 'Capabilities', href: '/capabilities', isRoute: true },
-    ,
     { name: 'About Us', href: '/about-us', isRoute: true },
-    { name: 'Contact', href: '/contact', isRoute: true },
+    { name: 'Contact', href: '#contact', isRoute: false },
   ];
 
   const renderNavItem = (item: any) => {
