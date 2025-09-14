@@ -13,7 +13,7 @@ const Navigation = () => {
     { name: 'Capabilities', href: '/capabilities', isRoute: true },
     { name: 'Industries', href: '#industries', isRoute: false },
     { name: 'Insights', href: '#insights', isRoute: false },
-    { name: 'About Us', href: '#about', isRoute: false },
+    { name: 'About Us', href: '/about-us', isRoute: true },
     { name: 'Contact', href: '#contact', isRoute: false },
   ];
 
