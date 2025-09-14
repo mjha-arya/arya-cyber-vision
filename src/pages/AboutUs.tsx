@@ -98,7 +98,7 @@ const AboutUs = () => {
         </section>
 
         {/* Impact & Trust */}
-        <section className="mb-14 mt-[153px]">
+        <section className="mb-14 mt-[133px]">
           <h2 className="text-2xl-plus font-bold text-foreground mb-8">Impact & Trust</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card-service">
