@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Centered Content */}
         <div className="hero__content" style={{ marginLeft: '120px' }}>
-          <h2 className="hero__eyebrow relative left-[-40px]">Arya Cyber Security solutions</h2>
+          <h2 className="hero__eyebrow relative left-[-70px]">Arya Cyber Security solutions</h2>
           <h1 className="hero-heading">
             AI-Powered Proactive Cyber Defense for Modern Businesses
           </h1>
