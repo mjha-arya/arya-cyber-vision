@@ -60,29 +60,27 @@ const AboutUs = () => {
         </div>
       </header>
 
-      {/* Founder Section */}
-      <section className="bg-muted py-1">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="w-[240px] h-[290px] rounded-full overflow-hidden border-4 border-primary mx-auto mb-4">
-            <img 
-              src="/src/assets/founder-photo-new.png" 
-              alt="Manish Jha, Founder of Arya Cyber Security Solutions"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </div>
-          <h2 className="text-2xl font-bold text-foreground">Manish Jha</h2>
-          <p className="text-muted-foreground">Founder & SecOps Architect</p>
-        </div>
-      </section>
-
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero - Founder Bio */}
         <section className="mb-8">
-          <div className="max-w-4xl">
-            <p className="text-lg leading-relaxed text-foreground">
-              I'm Manish Jha, a SecOps architect with 9+ years securing enterprises across 120+ countries—from leading banks and insurers to media, legal, and energy majors. I build and scale incident response, threat hunting, and cloud-first security that boards trust. My vision: turn security into measurable business value—cut MTTD/MTTR, accelerate audits, and enable faster, safer growth.
-            </p>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <p className="text-lg leading-relaxed text-foreground">
+                I'm Manish Jha, a SecOps architect with 9+ years securing enterprises across 120+ countries—from leading banks and insurers to media, legal, and energy majors. I build and scale incident response, threat hunting, and cloud-first security that boards trust. My vision: turn security into measurable business value—cut MTTD/MTTR, accelerate audits, and enable faster, safer growth.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-[240px] h-[290px] rounded-full overflow-hidden border-4 border-primary mx-auto mb-4">
+                <img 
+                  src="/src/assets/founder-photo-new.png" 
+                  alt="Manish Jha, Founder of Arya Cyber Security Solutions"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <h2 className="text-2xl font-bold text-foreground">Manish Jha</h2>
+              <p className="text-muted-foreground">Founder & SecOps Architect</p>
+            </div>
           </div>
         </section>
 
