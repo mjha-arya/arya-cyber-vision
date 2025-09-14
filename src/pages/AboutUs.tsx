@@ -59,21 +59,29 @@ const AboutUs = () => {
               <img 
                 src="/src/assets/arya-cyber-logo.png" 
                 alt="Arya Cyber Security Solutions Logo"
-                className="h-12 w-auto"
+                className="h-36 w-auto"
               />
             </div>
             <h1 className="text-3xl font-bold text-white">About Us</h1>
-            <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-primary">
-              <img 
-                src="/src/assets/founder-photo.png" 
-                alt="Manish Jha, Founder of Arya Cyber Security Solutions"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
           </div>
         </div>
       </header>
+
+      {/* Founder Section */}
+      <section className="bg-muted py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary mx-auto mb-4">
+            <img 
+              src="/src/assets/founder-photo.png" 
+              alt="Manish Jha, Founder of Arya Cyber Security Solutions"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h2 className="text-2xl font-bold text-foreground">Manish Jha</h2>
+          <p className="text-muted-foreground">Founder & SecOps Architect</p>
+        </div>
+      </section>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero - Founder Bio */}
