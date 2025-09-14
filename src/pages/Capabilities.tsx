@@ -54,7 +54,7 @@ const Capabilities = () => {
       
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/5 to-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Arya Cyber Security Solutions
@@ -62,7 +62,7 @@ const Capabilities = () => {
             <h2 className="text-2xl md:text-3xl font-semibold text-primary mb-8">
               Capability Overview
             </h2>
-            <p className="text-lg text-muted-foreground max-w-7xl">
+            <p className="text-lg text-muted-foreground">
               Comprehensive cybersecurity services powered by AI and automation, 
               delivered by certified experts with 30+ years of combined experience.
             </p>
