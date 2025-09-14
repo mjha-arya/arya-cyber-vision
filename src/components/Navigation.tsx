@@ -59,7 +59,7 @@ const Navigation = () => {
             {navItems.map((item) => renderNavItem(item))}
             <Button variant="orange" asChild>
               <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
-               Free 7-Minute Quick Cyber Security Risk Assessment
+                Free 7-Minute Quick Cyber Security Risk Assessment
               </a>
             </Button>
           </div>
