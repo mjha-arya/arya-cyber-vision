@@ -8,14 +8,14 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 210 35% 20%;
+    --background: 14 92% 54%; /* #f6511d */
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 210 35% 20%;
+    --card: 14 92% 54%; /* #f6511d */
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 35% 20%;
+    --popover: 14 92% 54%; /* #f6511d */
+    --popover-foreground: 0 0% 100%;
 
     /* AryaCyber Brand Colors */
     --primary: 207 92% 32%; /* #0865A2 */
@@ -33,8 +33,8 @@ All colors MUST be HSL.
     --soft: 207 34% 85%; /* #C9DCE8 */
     --soft-foreground: 211 54% 20%;
 
-    --light-bg: 215 100% 98%; /* #F8FBFF */
-    --light-bg-foreground: 211 54% 20%;
+    --light-bg: 14 92% 54%; /* #f6511d */
+    --light-bg-foreground: 0 0% 100%;
 
     --muted: 207 34% 85%;
     --muted-foreground: 211 35% 45%;
@@ -51,7 +51,7 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 14 92% 54%; /* #f6511d */
 
     --sidebar-foreground: 240 5.3% 26.1%;
 
