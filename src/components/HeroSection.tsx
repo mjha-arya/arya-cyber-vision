@@ -29,12 +29,12 @@ const HeroSection = () => {
           
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 btn-row">
-            <Button className="btn-primary-orange" asChild>
+            <Button variant="orange" asChild>
               <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
                 Check out the Free 7-Minute Quick Cyber Security Risk Assessment
               </a>
             </Button>
-            <Button className="btn-secondary-orange" asChild>
+            <Button variant="orange" asChild>
               <a href="/capabilities">
                 View Our Capabilities
               </a>

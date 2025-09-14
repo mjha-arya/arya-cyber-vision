@@ -195,7 +195,7 @@ const Capabilities = () => {
           </div>
 
           <div className="space-y-6">
-            <Button className="w-full text-white py-4 text-lg font-semibold" style={{backgroundColor: '#f6511d'}} size="lg" asChild>
+            <Button variant="orange" className="w-full py-4 text-lg font-semibold" size="lg" asChild>
               <a href="https://forms.gle/Rg1Y6zaobDXizAgk7" target="_blank" rel="noopener noreferrer">
                 Check out the Free 7-Minute Quick Cyber Security Risk Assessment
               </a>
