@@ -25,10 +25,10 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Email</h3>
               <a 
-                href="mailto:manish@aryacybersec.com"
+                href="mailto:hello@aryacyber.com"
                 className="text-primary hover:text-primary/80 transition-colors"
               >
-                manish@aryacybersec.com
+                hello@aryacyber.com
               </a>
             </div>
             
@@ -39,10 +39,10 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Phone</h3>
               <a 
-                href="tel:+447984130671"
+                href="tel:+44123456789"
                 className="text-primary hover:text-primary/80 transition-colors"
               >
-                +44 7984 130671
+                +44 (0) 123 456 7890
               </a>
             </div>
             
@@ -53,12 +53,12 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Website</h3>
               <a 
-                href="https://aryacybersec.com"
+                href="https://aryacyber.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:text-primary/80 transition-colors"
               >
-                aryacybersec.com
+                aryacyber.com
               </a>
             </div>
           </div>

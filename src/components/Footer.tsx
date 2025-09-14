@@ -1,4 +1,4 @@
-import { Shield, Mail, Phone, MapPin, Twitter, Linkedin, Github } from 'lucide-react';
+import { Shield, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,12 +10,6 @@ const Footer = () => {
     "Compliance & Governance"
   ];
 
-  const resources = [
-    "Case Studies",
-    "Security Insights",
-    "Threat Intelligence",
-    "Careers"
-  ];
 
   return (
     <footer className="bg-dark text-dark-foreground">
@@ -33,46 +27,22 @@ const Footer = () => {
               Protecting UK businesses with enterprise-grade cybersecurity solutions. 
               24/7 monitoring, rapid incident response, and Microsoft-first security.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-dark-foreground/60 hover:text-primary transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-dark-foreground/60 hover:text-primary transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-dark-foreground/60 hover:text-primary transition-colors">
-                <Github className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
-          {/* Column 2: Services & Resources */}
-          <div className="grid grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-lg-plus font-semibold mb-4">Services</h3>
-              <ul className="space-y-3">
-                {services.map((service, index) => (
-                  <li key={index}>
-                    <a href="#" className="text-base-plus text-dark-foreground/80 hover:text-primary transition-colors">
-                      {service}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg-plus font-semibold mb-4">Resources</h3>
-              <ul className="space-y-3">
-                {resources.map((resource, index) => (
-                  <li key={index}>
-                    <a href="#" className="text-base-plus text-dark-foreground/80 hover:text-primary transition-colors">
-                      {resource}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {/* Column 2: Services */}
+          <div>
+            <h3 className="text-lg-plus font-semibold mb-4">Services</h3>
+            <ul className="space-y-3">
+              {services.map((service, index) => (
+                <li key={index}>
+                  <a href="#" className="text-base-plus text-dark-foreground/80 hover:text-primary transition-colors">
+                    {service}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
+
 
           {/* Column 3: Contact Info */}
           <div>
