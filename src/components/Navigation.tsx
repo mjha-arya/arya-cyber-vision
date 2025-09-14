@@ -28,7 +28,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8 translate-x-[710px]">
+          <div className="hidden md:flex items-center space-x-8 translate-x-[200px]">
             {navItems.map((item) => (
               <a
                 key={item.name}
