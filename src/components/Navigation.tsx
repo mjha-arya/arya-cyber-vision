@@ -22,7 +22,7 @@ const Navigation = () => {
         <Link
           key={item.name}
           to={item.href}
-          className="nav-link text-[22px] font-bold text-nav-text"
+          className="nav-link text-[22px] font-bold text-nav-text whitespace-nowrap"
         >
           {item.name}
         </Link>
@@ -34,7 +34,7 @@ const Navigation = () => {
         <a
           key={item.name}
           href={href}
-          className="nav-link text-[22px] font-bold text-nav-text"
+          className="nav-link text-[22px] font-bold text-nav-text whitespace-nowrap"
         >
           {item.name}
         </a>
@@ -55,7 +55,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-[40px] translate-x-[100px]">
+          <div className="hidden md:flex items-center gap-[40px] translate-x-[70px]">
             {navItems.map((item) => renderNavItem(item))}
             <Button variant="orange" asChild>
               <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
