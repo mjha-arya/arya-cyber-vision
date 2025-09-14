@@ -3,20 +3,12 @@ import { Star, Quote } from 'lucide-react';
 const TestimonialSection = () => {
   const testimonials = [
     {
-      quote: "AryaCyber transformed our security posture completely. We've seen a 70% reduction in phishing-driven incidents within just 90 days of implementation.",
-      author: "Sarah Mitchell",
-      role: "CISO",
-      company: "TechCorp Ltd",
-      outcome: "70% reduction in phishing incidents",
-      timeframe: "90 days",
-    },
-    {
-      quote: "Their Microsoft-first approach aligned perfectly with our existing infrastructure. The 24/7 SOC gives us peace of mind that we've never had before.",
-      author: "David Thompson",
-      role: "IT Director",
-      company: "Manufacturing Solutions UK",
-      outcome: "99.9% threat detection rate",
-      timeframe: "6 months",
+      quote: "Arya Cyber Security Consulting exceeded our expectations by delivering a highly complex project under extremely stringent timelines without compromising on quality. Their team demonstrated exceptional technical expertise, clear communication, and a proactive approach to problem-solving throughout the engagement. The result was a seamless implementation that not only met but enhanced our security posture, enabling us to stay compliant and operational under tight deadlines.",
+      author: "Steve",
+      role: "",
+      company: "Cloud Sec Ltd, Singapore",
+      outcome: "Enhanced security posture",
+      timeframe: "Under tight deadlines",
     },
   ];
 
