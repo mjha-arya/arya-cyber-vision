@@ -8,7 +8,7 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Home', href: '/Home', isRoute: true },
+    { name: 'Home', href: '/', isRoute: true },
     { name: 'Services', href: '/services', isRoute: true },
     { name: 'Capabilities', href: '/capabilities', isRoute: true },
     ,
@@ -55,11 +55,11 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-[40px] translate-x-[90px]">
+          <div className="hidden md:flex items-center gap-[40px] translate-x-[70px]">
             {navItems.map((item) => renderNavItem(item))}
             <Button variant="orange" asChild>
               <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
-                Free 7-Minute Quick Cyber Security Risk Assessment
+                Check out Free 7-Minute Quick Cyber Security Risk Assessment
               </a>
             </Button>
           </div>
