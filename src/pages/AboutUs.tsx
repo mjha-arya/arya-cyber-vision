@@ -61,7 +61,7 @@ const AboutUs = () => {
       </header>
 
       {/* Founder Section */}
-      <section className="bg-muted py-8">
+      <section className="bg-muted py-3">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="w-[240px] h-[290px] rounded-full overflow-hidden border-4 border-primary mx-auto mb-4">
             <img 
