@@ -197,7 +197,7 @@ const Capabilities = () => {
           <div className="space-y-6">
             <Button variant="orange" className="w-full py-4 text-lg font-semibold" size="lg" asChild>
               <a href="https://forms.gle/Rg1Y6zaobDXizAgk7" target="_blank" rel="noopener noreferrer">
-                Check out the Free 7-Minute Quick Cyber Security Risk Assessment
+                Free 7-Minute Quick Cyber Security Risk Assessment
               </a>
             </Button>
             
