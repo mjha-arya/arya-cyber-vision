@@ -63,7 +63,7 @@ const AboutUs = () => {
       {/* Founder Section */}
       <section className="bg-muted py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="w-[260px] h-[300px] rounded-full overflow-hidden border-4 border-primary mx-auto mb-4">
+          <div className="w-[240px] h-[290px] rounded-full overflow-hidden border-4 border-primary mx-auto mb-4">
             <img 
               src="/src/assets/founder-photo-new.png" 
               alt="Manish Jha, Founder of Arya Cyber Security Solutions"
@@ -91,7 +91,7 @@ const AboutUs = () => {
           <h2 className="text-2xl font-bold text-foreground mb-6">Our Story</h2>
           <div className="max-w-4xl">
             <p className="text-lg leading-relaxed text-foreground">
-              Founded in UK, Arya Cyber Security Solutions exists to turn security tools into repeatable outcomes. We deliver automation-led SecOps, pragmatic architectures, and audit-ready reporting that teams can run every day. We already serve SMBs and enterprise clients across regulated and high-growth sectors.
+              Founded in UK, Arya Cyber Security Solutions exists to revolutionise the way cyber security services are provided. We deliver automation-led SecOps, pragmatic architectures, and audit-ready reporting that teams can run every day. We already serve SMBs and enterprise clients across regulated and high-growth sectors.
             </p>
           </div>
         </section>
