@@ -145,20 +145,20 @@ All colors MUST be HSL.
   }
 
   .hero__eyebrow {
-    font-size: clamp(14px, 1.2vw, 16px);
-    font-weight: 600;
-    color: hsl(var(--dark));
-    letter-spacing: 0.3px;
-    margin: 0 0 10px 0;
+    font-size: 44px;
+    font-weight: 700;
+    color: #8a17e8;
+    margin: 0 0 12px 0;
     text-align: center;
   }
 
   .hero-heading {
-    @apply font-bold leading-tight;
-    color: hsl(var(--hero-accent));
-    font-size: var(--h1-size);
+    font-size: 42px;
+    font-weight: 700;
+    color: #0059ff;
     line-height: 1.15;
-    margin: 0 0 0.5em 0;
+    margin: 0 0 16px 0;
+    text-align: center;
   }
 
   .section-heading {
