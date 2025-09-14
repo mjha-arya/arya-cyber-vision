@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
 
           {/* Column 2: Services */}
-          <div>
+          <div className="ml-[60px]">
             <h3 className="text-lg-plus font-semibold mb-4">Services</h3>
             <ul className="space-y-3">
               {services.map((service, index) => (
