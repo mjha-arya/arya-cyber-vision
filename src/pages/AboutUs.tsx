@@ -78,8 +78,10 @@ const AboutUs = () => {
                   loading="lazy"
                 />
               </div>
-              <h2 className="text-2xl font-bold text-foreground">Manish Jha</h2>
-              <p className="text-muted-foreground">Founder & SecOps Architect</p>
+              <div className="ml-[60px]">
+                <h2 className="text-2xl font-bold text-foreground">Manish Jha</h2>
+                <p className="text-muted-foreground">Founder & SecOps Architect</p>
+              </div>
             </div>
           </div>
         </section>
