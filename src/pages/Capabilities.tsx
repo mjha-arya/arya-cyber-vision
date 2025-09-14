@@ -62,7 +62,7 @@ const Capabilities = () => {
             <h2 className="text-2xl md:text-3xl font-semibold text-primary mb-8">
               Capability Overview
             </h2>
-            <p className="text-lg text-muted-foreground max-w-5xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-7xl">
               Comprehensive cybersecurity services powered by AI and automation, 
               delivered by certified experts with 30+ years of combined experience.
             </p>
