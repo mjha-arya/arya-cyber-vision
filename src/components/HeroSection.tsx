@@ -18,8 +18,9 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Centered Content */}
         <div className="hero__content">
+          <h2 className="hero__eyebrow">Arya Cyber Security solutions</h2>
           <h1 className="hero-heading">
-            Proactive Cyber Defense for Modern Businesses
+            AI Powered Proactive Cyber Defense for Modern Businesses
           </h1>
           <p className="text-lg text-muted-foreground max-w-xl">
             UK-based SecOps experts delivering 24/7 monitoring, incident response, 
@@ -38,19 +39,21 @@ const HeroSection = () => {
 
           {/* Trust Badges */}
           <div className="pt-8">
-            <p className="text-sm text-muted-foreground mb-4">Trusted by enterprises, certified by:</p>
-            <div className="flex flex-wrap items-center gap-8 hero__badges">
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Shield className="w-5 h-5" />
-                <span className="text-sm font-medium">Microsoft Security</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Award className="w-5 h-5" />
-                <span className="text-sm font-medium">ISO 27001</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <CheckCircle className="w-5 h-5" />
-                <span className="text-sm font-medium">Cyber Essentials Plus</span>
+            <div className="hero__badges-wrap">
+              <div className="hero__badges-label">Trusted by enterprises, certified by:</div>
+              <div className="hero__badges">
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <Shield className="w-5 h-5" />
+                  <span className="text-sm font-medium">Microsoft Security</span>
+                </div>
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <Award className="w-5 h-5" />
+                  <span className="text-sm font-medium">ISO 27001</span>
+                </div>
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <CheckCircle className="w-5 h-5" />
+                  <span className="text-sm font-medium">Cyber Essentials Plus</span>
+                </div>
               </div>
             </div>
           </div>

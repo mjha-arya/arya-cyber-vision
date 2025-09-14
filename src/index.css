@@ -66,6 +66,9 @@ All colors MUST be HSL.
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Hero accent color */
+    --hero-accent: 274 82% 50%; /* #8a17e8 */
   }
 
   .dark {
@@ -141,8 +144,18 @@ All colors MUST be HSL.
     overflow: visible;
   }
 
+  .hero__eyebrow {
+    font-size: clamp(14px, 1.2vw, 16px);
+    font-weight: 600;
+    color: hsl(var(--dark));
+    letter-spacing: 0.3px;
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+
   .hero-heading {
-    @apply text-dark font-bold leading-tight;
+    @apply font-bold leading-tight;
+    color: hsl(var(--hero-accent));
     font-size: var(--h1-size);
     line-height: 1.15;
     margin: 0 0 0.5em 0;
@@ -171,13 +184,32 @@ All colors MUST be HSL.
     opacity: 1;
     mix-blend-mode: normal;
     transform-origin: top left;
-    transform: scale(0.975);
+    transform: scale(0.8775);
   }
 
-  /* Badges row - shifted right */
+  /* Badges alignment stack */
+  .hero__badges-wrap {
+    display: grid;
+    justify-items: center;
+    gap: 6px;
+    margin-top: clamp(10px, 1.6vw, 16px);
+  }
+
+  .hero__badges-label {
+    font-size: clamp(12px, 1.1vw, 14px);
+    color: hsl(var(--muted-foreground));
+    text-align: center;
+    margin: 0;
+  }
+
   .hero__badges {
-    position: relative;
-    transform: translateX(50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(10px, 2vw, 24px);
+    margin: 0;
+    padding: 0;
+    transform: none;
   }
 
   /* Centered content block */
