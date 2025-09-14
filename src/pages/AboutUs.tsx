@@ -63,7 +63,7 @@ const AboutUs = () => {
       <main className=" px-4 sm:px-8 lg:px-12 pt-[12px] pb-12">
         {/* Hero - Founder Bio */}
         <section className="mb-4">
-          <h2 className="text-2xl-plus font-bold text-foreground mb-4 mt-[30px]">About the Founder</h2>
+          <h2 className="text-2xl-plus font-bold text-foreground mb-4 mt-[10px]">About the Founder</h2>
           <div className="grid md:grid-cols-[2fr_1fr] gap-8 items-center">
             <div className="-mt-[450px] max-w-6xl">
               <p className="text-lg-plus leading-relaxed text-foreground">
@@ -98,7 +98,7 @@ const AboutUs = () => {
         </section>
 
         {/* Impact & Trust */}
-        <section className="mb-14 mt-[178px]">
+        <section className="mb-14 mt-[163px]">
           <h2 className="text-2xl-plus font-bold text-foreground mb-8">Impact & Trust</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card-service">
