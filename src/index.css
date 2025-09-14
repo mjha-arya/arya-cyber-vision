@@ -127,32 +127,17 @@ All colors MUST be HSL.
 
 @layer components {
   :root {
-    /* Eagle logo - 4× size */
-    --eagle-width: clamp(224px, 32vw, 384px);
-    --eagle-top: clamp(12px, 2.5vw, 28px);
-    --eagle-left: clamp(8px, 2vw, 24px);
-    --eagle-gap: 20px; /* 20px gap after logo */
-
-    /* Shield - with 2× scale */
-    --shield-width: clamp(160px, 22vw, 280px);
-    --shield-right: clamp(8px, 2vw, 24px);
-    --shield-scale: 2; /* 2× enlargement */
-
-    /* Safe zones to position content exactly 20px after eagle */
-    --safe-left: calc(var(--eagle-width) + var(--eagle-left) + var(--eagle-gap) - 60px);
-    --safe-right: calc(var(--shield-width) * var(--shield-scale) + var(--shield-right) + 32px);
-
-    /* Content sizing - h1 reduced by 20% */
-    --content-max: clamp(560px, 62vw, 880px);
-    --h1-size: clamp(22.4px, 4.16vw, 35.2px);
+    /* Typography controls for centered headline wrap */
+    --h1-measure: clamp(22ch, 24ch + 2vw, 28ch);
+    --h1-size: clamp(28px, 4.2vw, 44px);
     --p-size: clamp(16px, 1.6vw, 18px);
   }
 
   .hero {
     position: relative;
-    min-height: clamp(560px, 70vh, 820px);
     display: grid;
-    align-items: center;
+    place-items: center;
+    min-height: clamp(520px, 68vh, 760px);
     overflow: visible;
   }
 
@@ -169,19 +154,20 @@ All colors MUST be HSL.
   }
 
   /* Keep decorative images behind content */
-  .hero__mark--tl, .hero__eagle, .hero__mark,
+  .hero__eagle, .hero__mark--tl, .hero__mark,
   .hero__shield, .hero__art img {
+    position: absolute;
     z-index: 0;
     pointer-events: none;
     user-select: none;
   }
 
-  /* Golden eagle - reduced to 75% of 4× size, top-left */
+  /* Golden eagle - positioned top-left */
   .hero__mark--tl {
     position: absolute;
-    top: var(--eagle-top);
-    left: var(--eagle-left);
-    width: var(--eagle-width);
+    top: clamp(12px, 2.5vw, 28px);
+    left: clamp(8px, 2vw, 24px);
+    width: clamp(224px, 32vw, 384px);
     height: auto;
     opacity: 1;
     mix-blend-mode: normal;
@@ -192,49 +178,53 @@ All colors MUST be HSL.
   /* Right-side shield - 2× scaled, positioned right */
   .hero__shield {
     position: absolute;
-    right: var(--shield-right);
+    right: clamp(8px, 2vw, 24px);
     top: 50%;
     transform-origin: right center;
-    transform: translateY(-50%) scale(var(--shield-scale));
-    width: var(--shield-width);
+    transform: translateY(-50%) scale(2);
+    width: clamp(160px, 22vw, 280px);
     height: auto;
     object-fit: contain;
     opacity: 0.8;
     border-radius: 1rem;
   }
 
-  /* Layout: center the content area BETWEEN the safe zones and make it more horizontal */
+  /* Centered content block */
   .hero__content {
     position: relative;
     z-index: 2;
-    /* Wider, more horizontal block centered in available space */
-    max-inline-size: clamp(680px, 70vw, 1080px);
     margin-inline: auto;
-    /* Enforce no-overlap via safe padding from both images */
-    padding-left: max(var(--safe-left), 24px);
-    padding-right: max(var(--safe-right), 24px);
-    text-align: left;
+    text-align: center;
+    max-inline-size: clamp(560px, 64vw, 960px);
+    padding-inline: clamp(12px, 3vw, 28px);
     text-wrap: balance;
   }
 
-  .hero__content h1 {
+  .hero__content h1,
+  .hero__title {
+    max-inline-size: var(--h1-measure);
+    margin-inline: auto;
     line-height: 1.15;
     letter-spacing: 0.1px;
-    margin: 0 0 0.6em 0;
+    font-size: var(--h1-size);
+    margin-bottom: 0.6em;
   }
 
   .hero__content p {
+    max-inline-size: 70ch;
+    margin-inline: auto;
     font-size: var(--p-size);
     line-height: 1.6;
-    max-width: 75ch;
   }
 
   .btn-row {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: clamp(10px, 1.6vw, 16px);
+    gap: clamp(10px, 1.6vw, 18px);
     margin-top: 2rem;
   }
+
   .btn-primary {
     @apply bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-mid focus:ring-offset-2;
   }
@@ -260,38 +250,20 @@ All colors MUST be HSL.
     @apply w-full;
   }
 
-  /* Responsive protection: maintain the middle positioning and no-overlap on narrow screens */
-  @media (max-width: 1024px) {
-    .hero__content {
-      max-inline-size: clamp(640px, 78vw, 980px);
-    }
-  }
-
+  /* Responsive adjustments */
   @media (max-width: 768px) {
     :root {
-      --h1-size: clamp(19.2px, 4.8vw, 28.8px);
+      --h1-size: clamp(24px, 5vw, 36px);
       --p-size: clamp(15px, 2.2vw, 17px);
-    }
-    .hero {
-      min-height: clamp(560px, 72vh, 820px);
+      --h1-measure: clamp(20ch, 22ch + 2vw, 26ch);
     }
   }
 
   @media (max-width: 640px) {
     :root {
-      --h1-size: clamp(17.6px, 5.44vw, 25.6px);
+      --h1-size: clamp(22px, 5.5vw, 32px);
       --p-size: clamp(14px, 2.8vw, 16px);
+      --h1-measure: clamp(18ch, 20ch + 2vw, 24ch);
     }
-    .hero__content {
-      max-inline-size: min(92vw, 720px);
-      padding-left: max(var(--safe-left), 16px);
-      padding-right: max(var(--safe-right), 16px);
-    }
-  }
-
-  /* Prevent overlap on interactive elements */
-  .hero__content a, .hero__content button, .hero__content .btn-row {
-    position: relative;
-    z-index: 3;
   }
 }
