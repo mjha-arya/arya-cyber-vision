@@ -57,7 +57,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8 translate-x-[300px]">
+          <div className="hidden md:flex items-center space-x-8 translate-x-[290px]">
             {navItems.map((item) => renderNavItem(item))}
             <Button className="btn-primary">
               Book a Security Assessment
