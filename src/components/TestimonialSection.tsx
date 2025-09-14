@@ -13,7 +13,7 @@ const TestimonialSection = () => {
     {
       quote: "AryaCyber Security Solutions pinpointed critical gaps in our EDR configuration across a vast estate and delivered a comprehensive, risk‑mitigating plan. Their presentations to the Cloud Design Forum were concise, confident, and impactful under pressure. The closure notes provided were perfectly scoped—clear, to‑the‑point, and audit‑ready, without inviting unnecessary scrutiny. When rapid fixes were needed, AryaCyber's tactical guidance hit the mark, enabling us to meet urgent business demands before refining functionality. Even our toughest network‑segmentation debates were handled with candour and professionalism. Above all, their ability to listen, weigh diverse opinions, and integrate them into robust SecOps processes is truly exceptional.",
       author: "Marcus Johnson",
-      role: "Lead Information Security Engineer",
+      role: "Lead Security Engineer",
       company: "Global Professional Services Firm, UK",
       outcome: "Critical gaps identified",
       timeframe: "Rapid fixes delivered",
