@@ -46,7 +46,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-22">
           {/* Logo */}
-          <Link to="/" className="flex items-center translate-x-[1px]">
+          <Link to="/" className="flex items-center translate-x-[-30px]">
             <div className="flex items-center space-x-1 whitespace-nowrap">
               <span className="text-[22px] font-bold text-nav-logo">ARYA</span>
               <span className="text-[22px] font-bold text-nav-logo">CYBER SECURITY SOLUTIONS</span>
@@ -58,7 +58,7 @@ const Navigation = () => {
             {navItems.map((item) => renderNavItem(item))}
             <Button variant="orange" asChild>
               <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
-                Check out Free 7-Minute Quick Cyber Security Risk Assessment
+                Free 7-Minute Quick Cyber Security Risk Assessment
               </a>
             </Button>
           </div>
