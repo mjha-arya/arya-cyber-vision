@@ -32,8 +32,10 @@ const HeroSection = () => {
             <Button className="btn-primary">
               Book a Security Assessment
             </Button>
-            <Button className="btn-secondary">
-              Download Capabilities Deck (PDF)
+            <Button className="btn-secondary" asChild>
+              <a href="/AryaCyber_Security_Solutions_Capabilities.pdf" download>
+                Download Capabilities Deck (PDF)
+              </a>
             </Button>
           </div>
 
