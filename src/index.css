@@ -256,7 +256,7 @@ All colors MUST be HSL.
   }
 
   .btn-primary-orange {
-    background-color: hsl(var(--orange-cta));
+    background-color: #f6511d;
     @apply text-white hover:opacity-90 px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-mid focus:ring-offset-2;
   }
 
@@ -265,7 +265,7 @@ All colors MUST be HSL.
   }
 
   .btn-secondary-orange {
-    background-color: hsl(var(--orange-cta));
+    background-color: #f6511d;
     @apply text-white hover:opacity-90 border-2 px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-mid focus:ring-offset-2;
   }
 
