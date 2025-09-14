@@ -36,26 +36,6 @@ const Capabilities = () => {
       title: "SOC 2 Compliance",
       description: "Full support for SOC 2 compliance including controls implementation and audit preparation.",
       icon: Award
-    },
-    {
-      title: "Security Operations",
-      description: "24/7 monitoring and incident response services to protect your organization from cyber threats.",
-      icon: Shield
-    },
-    {
-      title: "Security Automation",
-      description: "Implementation of automated security processes to improve efficiency and reduce response times.",
-      icon: CheckCircle
-    },
-    {
-      title: "Security Architecture",
-      description: "Design and implementation of secure IT infrastructure tailored to your business requirements.",
-      icon: Shield
-    },
-    {
-      title: "Data Loss Prevention (DLP)",
-      description: "Advanced solutions to prevent unauthorized data access, transfer, and loss across your organization.",
-      icon: Award
     }
   ];
 
@@ -100,7 +80,7 @@ const Capabilities = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {coreOfferings.map((offering, index) => {
               const IconComponent = offering.icon;
               return (
