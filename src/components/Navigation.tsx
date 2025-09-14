@@ -17,10 +17,10 @@ const Navigation = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transform -translate-x-[60px]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center -translate-x-[50px]">
             <div className="flex items-baseline space-x-2">
               <span className="text-2xl font-bold text-primary">ARYA</span>
               <span className="text-sm font-medium text-dark">CYBER SECURITY SOLUTIONS</span>
