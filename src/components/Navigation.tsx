@@ -12,7 +12,6 @@ const Navigation = () => {
     { name: 'Services', href: '#services', isRoute: false },
     { name: 'Capabilities', href: '/capabilities', isRoute: true },
     { name: 'Industries', href: '#industries', isRoute: false },
-    { name: 'Case Studies', href: '#case-studies', isRoute: false },
     { name: 'Insights', href: '#insights', isRoute: false },
     { name: 'About Us', href: '#about', isRoute: false },
     { name: 'Contact', href: '#contact', isRoute: false },
@@ -57,7 +56,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8 translate-x-[290px]">
+          <div className="hidden md:flex items-center gap-[15px] translate-x-[290px]">
             {navItems.map((item) => renderNavItem(item))}
             <Button className="btn-primary">
               Book a Security Assessment
