@@ -39,7 +39,7 @@ const HeroSection = () => {
           {/* Trust Badges */}
           <div className="pt-8">
             <p className="text-sm text-muted-foreground mb-4">Trusted by enterprises, certified by:</p>
-            <div className="flex flex-wrap items-center gap-8">
+            <div className="flex flex-wrap items-center gap-8 hero__badges">
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Shield className="w-5 h-5" />
                 <span className="text-sm font-medium">Microsoft Security</span>

@@ -165,13 +165,19 @@ All colors MUST be HSL.
   .hero__mark--tl {
     position: absolute;
     top: clamp(12px, 2.5vw, 28px);
-    left: clamp(8px, 2vw, 24px);
+    left: calc(clamp(8px, 2vw, 24px) + 40px);
     width: clamp(224px, 32vw, 384px);
     height: auto;
     opacity: 1;
     mix-blend-mode: normal;
     transform-origin: top left;
-    transform: scale(0.75);
+    transform: scale(0.975);
+  }
+
+  /* Badges row - shifted right */
+  .hero__badges {
+    position: relative;
+    transform: translateX(50px);
   }
 
   /* Centered content block */
