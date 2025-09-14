@@ -214,16 +214,16 @@ const Capabilities = () => {
             </div>
           </div>
 
-          <div className="bg-primary/5 rounded-lg p-8 mb-8">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              Free 7-Minute Quick Cyber Security Risk Assessment
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              Get insights into your organization's security posture with our complimentary assessment
-            </p>
-            <Button className="btn-primary" size="lg" asChild>
+          <div className="space-y-6">
+            <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 text-lg font-semibold" size="lg" asChild>
               <a href="https://forms.gle/Rg1Y6zaobDXizAgk7" target="_blank" rel="noopener noreferrer">
-                Book Your Free Consultation Call Now
+                Check out the Free 7-Minute Quick Cyber Security Risk Assessment
+              </a>
+            </Button>
+            
+            <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white py-4 text-lg font-semibold" size="lg" asChild>
+              <a href="https://calendar.app.google/4gwrjsKJ9k862yJbA" target="_blank" rel="noopener noreferrer">
+                Book your Free Consultation Call Now
               </a>
             </Button>
           </div>
