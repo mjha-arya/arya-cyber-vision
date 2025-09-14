@@ -88,7 +88,7 @@ const AboutUs = () => {
         </section>
 
         {/* Story Section */}
-        <section className="mb-2 -mt-[400px]">
+        <section className="mb-2 -mt-[385px]">
           <h2 className="text-2xl-plus font-bold text-foreground mb-6">Our Story</h2>
           <div className="max-w-6xl">
             <p className="text-lg-plus leading-relaxed text-foreground">
