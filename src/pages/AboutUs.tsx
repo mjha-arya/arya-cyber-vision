@@ -60,7 +60,7 @@ const AboutUs = () => {
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 pb-12 -mt-24">
         {/* Hero - Founder Bio */}
         <section className="mb-8">
           <div className="grid md:grid-cols-2 gap-8 items-center">
