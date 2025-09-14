@@ -20,7 +20,7 @@ const HeroSection = () => {
         <div className="hero__content">
           <h2 className="hero__eyebrow relative left-[-40px]">Arya Cyber Security solutions</h2>
           <h1 className="hero-heading">
-            AI Powered Proactive Cyber Defense for Modern Businesses
+            AI-Powered Proactive Cyber Defense for Modern Businesses
           </h1>
           <p className="text-lg text-muted-foreground max-w-xl">
             UK-based SecOps experts delivering 24/7 monitoring, incident response, 
