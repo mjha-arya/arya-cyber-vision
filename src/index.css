@@ -150,7 +150,7 @@ All colors MUST be HSL.
 
   .hero {
     position: relative;
-    min-height: clamp(520px, 68vh, 760px);
+    min-height: clamp(560px, 70vh, 820px);
     display: grid;
     align-items: center;
     overflow: visible;
@@ -168,6 +168,14 @@ All colors MUST be HSL.
     font-size: clamp(1.375rem, 3vw, 2rem);
   }
 
+  /* Keep decorative images behind content */
+  .hero__mark--tl, .hero__eagle, .hero__mark,
+  .hero__shield, .hero__art img {
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+
   /* Golden eagle - reduced to 75% of 4× size, top-left */
   .hero__mark--tl {
     position: absolute;
@@ -177,9 +185,6 @@ All colors MUST be HSL.
     height: auto;
     opacity: 1;
     mix-blend-mode: normal;
-    pointer-events: none;
-    user-select: none;
-    z-index: 0;
     transform-origin: top left;
     transform: scale(0.75);
   }
@@ -195,27 +200,33 @@ All colors MUST be HSL.
     height: auto;
     object-fit: contain;
     opacity: 0.8;
-    pointer-events: none;
-    user-select: none;
-    z-index: 0;
     border-radius: 1rem;
   }
 
-  /* Content aligned exactly 20px after eagle's right edge */
+  /* Layout: center the content area BETWEEN the safe zones and make it more horizontal */
   .hero__content {
     position: relative;
     z-index: 2;
-    max-width: var(--content-max);
-    margin-left: var(--safe-left);
-    margin-right: auto;
+    /* Wider, more horizontal block centered in available space */
+    max-inline-size: clamp(680px, 70vw, 1080px);
+    margin-inline: auto;
+    /* Enforce no-overlap via safe padding from both images */
+    padding-left: max(var(--safe-left), 24px);
     padding-right: max(var(--safe-right), 24px);
     text-align: left;
-    space-y: 2rem;
+    text-wrap: balance;
+  }
+
+  .hero__content h1 {
+    line-height: 1.15;
+    letter-spacing: 0.1px;
+    margin: 0 0 0.6em 0;
   }
 
   .hero__content p {
     font-size: var(--p-size);
     line-height: 1.6;
+    max-width: 75ch;
   }
 
   .btn-row {
@@ -249,11 +260,10 @@ All colors MUST be HSL.
     @apply w-full;
   }
 
-  /* Responsive refinements - h1 reduced by 20% across breakpoints */
+  /* Responsive protection: maintain the middle positioning and no-overlap on narrow screens */
   @media (max-width: 1024px) {
-    :root {
-      --h1-size: clamp(20.8px, 4vw, 32px);
-      --content-max: clamp(520px, 72vw, 760px);
+    .hero__content {
+      max-inline-size: clamp(640px, 78vw, 980px);
     }
   }
 
@@ -271,11 +281,11 @@ All colors MUST be HSL.
     :root {
       --h1-size: clamp(17.6px, 5.44vw, 25.6px);
       --p-size: clamp(14px, 2.8vw, 16px);
-      --content-max: clamp(440px, 86vw, 640px);
     }
     .hero__content {
-      padding-left: max(var(--safe-left), 20px);
-      padding-right: max(var(--safe-right), 20px);
+      max-inline-size: min(92vw, 720px);
+      padding-left: max(var(--safe-left), 16px);
+      padding-right: max(var(--safe-right), 16px);
     }
   }
 
