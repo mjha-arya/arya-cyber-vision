@@ -33,7 +33,7 @@ const Navigation = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="nav-link text-sm font-medium"
+                className="nav-link text-2xl font-medium"
               >
                 {item.name}
               </a>
@@ -62,7 +62,7 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="nav-link text-base font-medium"
+                  className="nav-link text-2xl font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
