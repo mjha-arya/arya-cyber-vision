@@ -6,14 +6,13 @@ import uploadedLogo from '@/assets/uploaded-logo.png';
 const HeroSection = () => {
   return (
     <section id="home" className="hero py-20 bg-background relative">
-      {/* ARYA CYBER SECURITY SOLUTIONS - Top Left */}
-      <div className="hero__mark--tl">
-        <span className="hero__arya">ARYA</span>
-        <div className="hero__cyber-security">
-          <span>CYBER</span>
-          <span>SECURITY</span>
-        </div>
-      </div>
+      {/* Golden Eagle - Top Left */}
+      <img
+        src={uploadedLogo}
+        alt=""
+        aria-hidden="true"
+        className="hero__mark--tl"
+      />
       
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
