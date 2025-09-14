@@ -8,12 +8,12 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Home', href: '/', isRoute: true },
-    { name: 'Services', href: '#services', isRoute: false },
+    { name: 'Home', href: '/Home', isRoute: true },
+    { name: 'Services', href: '/services', isRoute: false },
     { name: 'Capabilities', href: '/capabilities', isRoute: true },
     ,
     { name: 'About Us', href: '/about-us', isRoute: true },
-    { name: 'Contact', href: '#contact', isRoute: false },
+    { name: 'Contact', href: '/contact', isRoute: false },
   ];
 
   const renderNavItem = (item: any) => {
@@ -55,7 +55,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-[37px] translate-x-[120px]">
+          <div className="hidden md:flex items-center gap-[40px] translate-x-[140px]">
             {navItems.map((item) => renderNavItem(item))}
             <Button variant="orange" asChild>
               <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
