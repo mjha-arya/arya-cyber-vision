@@ -65,7 +65,7 @@ const AboutUs = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="w-[260px] h-[300px] rounded-full overflow-hidden border-4 border-primary mx-auto mb-4">
             <img 
-              src="/src/assets/founder-photo.png" 
+              src="/src/assets/founder-photo-new.png" 
               alt="Manish Jha, Founder of Arya Cyber Security Solutions"
               className="w-full h-full object-cover"
               loading="lazy"
