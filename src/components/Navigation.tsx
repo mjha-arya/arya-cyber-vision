@@ -46,7 +46,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-22">
           {/* Logo */}
-          <Link to="/" className="flex items-center translate-x-[-15px]">
+          <Link to="/" className="flex items-center translate-x-[1px]">
             <div className="flex items-center space-x-1 whitespace-nowrap">
               <span className="text-[22px] font-bold text-nav-logo">ARYA</span>
               <span className="text-[22px] font-bold text-nav-logo">CYBER SECURITY SOLUTIONS</span>
