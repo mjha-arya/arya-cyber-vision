@@ -22,7 +22,7 @@ const Navigation = () => {
         <Link
           key={item.name}
           to={item.href}
-          className="nav-link text-sm font-bold text-nav-text"
+          className="nav-link text-[22px] font-bold text-nav-text"
         >
           {item.name}
         </Link>
@@ -34,7 +34,7 @@ const Navigation = () => {
         <a
           key={item.name}
           href={href}
-          className="nav-link text-sm font-bold text-nav-text"
+          className="nav-link text-[22px] font-bold text-nav-text"
         >
           {item.name}
         </a>
@@ -45,17 +45,17 @@ const Navigation = () => {
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-22">
           {/* Logo */}
           <Link to="/" className="flex items-center -translate-x-[190px]">
             <div className="flex items-center space-x-1 whitespace-nowrap">
-              <span className="text-lg font-bold text-nav-logo">ARYA</span>
-              <span className="text-xs font-bold text-nav-logo">CYBER SECURITY SOLUTIONS</span>
+              <span className="text-[22px] font-bold text-nav-logo">ARYA</span>
+              <span className="text-[22px] font-bold text-nav-logo">CYBER SECURITY SOLUTIONS</span>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-[40px] translate-x-[140px]">
+          <div className="hidden md:flex items-center gap-[40px] translate-x-[100px]">
             {navItems.map((item) => renderNavItem(item))}
             <Button variant="orange" asChild>
               <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
