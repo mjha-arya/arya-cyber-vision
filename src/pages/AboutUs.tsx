@@ -55,7 +55,7 @@ const AboutUs = () => {
       <header className="bg-dark py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-white">About Us</h1>
+            <h1 className="text-5xl-plus font-bold text-white">About Us</h1>
           </div>
         </div>
       </header>
@@ -63,10 +63,10 @@ const AboutUs = () => {
       <main className=" px-4 sm:px-8 lg:px-12 pt-[12px] pb-12">
         {/* Hero - Founder Bio */}
         <section className="mb-4">
-          <h2 className="text-2xl font-bold text-foreground mb-4 mt-[30px]">About the Founder</h2>
+          <h2 className="text-2xl-plus font-bold text-foreground mb-4 mt-[30px]">About the Founder</h2>
           <div className="grid md:grid-cols-[2fr_1fr] gap-8 items-center">
             <div className="-mt-[450px] max-w-6xl">
-              <p className="text-lg leading-relaxed text-foreground">
+              <p className="text-lg-plus leading-relaxed text-foreground">
                 I'm Manish Jha, a SecOps architect with 9+ years securing enterprises across 120+ countries—from leading banks and insurers to media, legal, and energy majors. I build and scale incident response, threat hunting, and cloud-first security that boards trust. My vision: turn security into measurable business value—cut MTTD/MTTR, accelerate audits, and enable faster, safer growth.
               </p>
             </div>
@@ -80,8 +80,8 @@ const AboutUs = () => {
                 />
               </div>
               <div className="ml-[60px] -mt-[10px]">
-                <h2 className="text-2xl font-bold text-foreground">Manish Jha</h2>
-                <p className="text-muted-foreground">Founder & SecOps Architect</p>
+                <h2 className="text-2xl-plus font-bold text-foreground">Manish Jha</h2>
+                <p className="text-base-plus text-muted-foreground">Founder & SecOps Architect</p>
               </div>
             </div>
           </div>
@@ -89,9 +89,9 @@ const AboutUs = () => {
 
         {/* Story Section */}
         <section className="mb-2 -mt-[400px]">
-          <h2 className="text-2xl font-bold text-foreground mb-6">Our Story</h2>
+          <h2 className="text-2xl-plus font-bold text-foreground mb-6">Our Story</h2>
           <div className="max-w-6xl">
-            <p className="text-lg leading-relaxed text-foreground">
+            <p className="text-lg-plus leading-relaxed text-foreground">
               Founded in UK, Arya Cyber Security Solutions exists to revolutionise the way cyber security services are provided. We deliver automation-led SecOps, pragmatic architectures, and audit-ready reporting that teams can run every day. We already serve SMBs and enterprise clients across regulated and high-growth sectors.
             </p>
           </div>
@@ -99,23 +99,23 @@ const AboutUs = () => {
 
         {/* Impact & Trust */}
         <section className="mb-14 mt-[178px]">
-          <h2 className="text-2xl font-bold text-foreground mb-8">Impact & Trust</h2>
+          <h2 className="text-2xl-plus font-bold text-foreground mb-8">Impact & Trust</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card-service">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Elite Credentials</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-xl-plus font-semibold text-foreground mb-4">Elite Credentials</h3>
+              <p className="text-base-plus text-muted-foreground">
                 CEH, OSCP, AZ-500, AZ-304, AZ-303, Azure AI; 30+ years combined team experience.
               </p>
             </div>
             <div className="card-service">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Proven Delivery</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-xl-plus font-semibold text-foreground mb-4">Proven Delivery</h3>
+              <p className="text-base-plus text-muted-foreground">
                 High-stakes programs on time, on budget, audit-ready.
               </p>
             </div>
             <div className="card-service">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Trusted by Leaders</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-xl-plus font-semibold text-foreground mb-4">Trusted by Leaders</h3>
+              <p className="text-base-plus text-muted-foreground">
                 Serving SMBs & enterprises in finance, legal, media, and energy.
               </p>
             </div>
@@ -124,23 +124,23 @@ const AboutUs = () => {
 
         {/* Approach */}
         <section className="mb-14">
-          <h2 className="text-2xl font-bold text-foreground mb-8">Our Approach</h2>
+          <h2 className="text-2xl-plus font-bold text-foreground mb-8">Our Approach</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card-service">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Outcomes-First KPIs</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-xl-plus font-semibold text-foreground mb-4">Outcomes-First KPIs</h3>
+              <p className="text-base-plus text-muted-foreground">
                 Risk reduction, audit readiness, cycle-time improvements.
               </p>
             </div>
             <div className="card-service">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Automation by Design</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-xl-plus font-semibold text-foreground mb-4">Automation by Design</h3>
+              <p className="text-base-plus text-muted-foreground">
                 SOAR playbooks & integrations that free analysts for high-value work.
               </p>
             </div>
             <div className="card-service">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Executive Clarity</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-xl-plus font-semibold text-foreground mb-4">Executive Clarity</h3>
+              <p className="text-base-plus text-muted-foreground">
                 Board-ready reporting & prioritised remediation that stands up to audits.
               </p>
             </div>
@@ -149,12 +149,12 @@ const AboutUs = () => {
 
         {/* Solutions */}
         <section className="mb-14">
-          <h2 className="text-2xl font-bold text-foreground mb-8">Our Solutions</h2>
+          <h2 className="text-2xl-plus font-bold text-foreground mb-8">Our Solutions</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {solutions.map((solution, index) => (
               <div key={index} className="card-service">
-                <h3 className="text-lg font-semibold text-foreground mb-3">{solution.name}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{solution.description}</p>
+                <h3 className="text-lg-plus font-semibold text-foreground mb-3">{solution.name}</h3>
+                <p className="text-sm-plus text-muted-foreground leading-relaxed">{solution.description}</p>
               </div>
             ))}
           </div>

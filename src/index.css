@@ -302,4 +302,37 @@ All colors MUST be HSL.
       --h1-measure: clamp(18ch, 20ch + 2vw, 24ch);
     }
   }
+
+  /* 30% larger font size utilities for non-homepage content */
+  .text-sm-plus {
+    font-size: 1.137rem; /* 18.2px - 30% larger than 14px */
+  }
+  
+  .text-base-plus {
+    font-size: 1.3rem; /* 20.8px - 30% larger than 16px */
+  }
+  
+  .text-lg-plus {
+    font-size: 1.463rem; /* 23.4px - 30% larger than 18px */
+  }
+  
+  .text-xl-plus {
+    font-size: 1.625rem; /* 26px - 30% larger than 20px */
+  }
+  
+  .text-2xl-plus {
+    font-size: 1.95rem; /* 31.2px - 30% larger than 24px */
+  }
+  
+  .text-3xl-plus {
+    font-size: 2.438rem; /* 39px - 30% larger than 30px */
+  }
+  
+  .text-4xl-plus {
+    font-size: 2.925rem; /* 46.8px - 30% larger than 36px */
+  }
+  
+  .text-5xl-plus {
+    font-size: 3.9rem; /* 62.4px - 30% larger than 48px */
+  }
 }

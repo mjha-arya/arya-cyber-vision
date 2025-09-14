@@ -23,7 +23,7 @@ const Navigation = () => {
         <Link
           key={item.name}
           to={item.href}
-          className="nav-link text-sm font-medium"
+          className="nav-link text-sm-plus font-medium"
         >
           {item.name}
         </Link>
@@ -35,7 +35,7 @@ const Navigation = () => {
         <a
           key={item.name}
           href={href}
-          className="nav-link text-sm font-medium"
+          className="nav-link text-sm-plus font-medium"
         >
           {item.name}
         </a>
@@ -50,8 +50,8 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center -translate-x-[190px]">
             <div className="flex items-center space-x-2">
-              <span className="text-2xl font-bold text-primary">ARYA</span>
-              <span className="text-sm font-medium text-dark">CYBER SECURITY SOLUTIONS</span>
+              <span className="text-2xl-plus font-bold text-primary">ARYA</span>
+              <span className="text-sm-plus font-medium text-dark">CYBER SECURITY SOLUTIONS</span>
             </div>
           </Link>
 
