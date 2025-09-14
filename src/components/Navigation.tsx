@@ -23,7 +23,7 @@ const Navigation = () => {
         <Link
           key={item.name}
           to={item.href}
-          className="nav-link text-sm-plus font-medium"
+          className="nav-link text-xs-minus font-medium"
         >
           {item.name}
         </Link>
@@ -35,7 +35,7 @@ const Navigation = () => {
         <a
           key={item.name}
           href={href}
-          className="nav-link text-sm-plus font-medium"
+          className="nav-link text-xs-minus font-medium"
         >
           {item.name}
         </a>
@@ -49,9 +49,9 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center -translate-x-[190px]">
-            <div className="flex items-center space-x-2">
-              <span className="text-2xl-plus font-bold text-primary">ARYA</span>
-              <span className="text-sm-plus font-medium text-dark">CYBER SECURITY SOLUTIONS</span>
+            <div className="flex items-center space-x-1 whitespace-nowrap">
+              <span className="text-lg-minus font-bold text-primary">ARYA</span>
+              <span className="text-xs-minus font-medium text-dark">CYBER SECURITY SOLUTIONS</span>
             </div>
           </Link>
 

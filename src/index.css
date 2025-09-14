@@ -326,7 +326,32 @@ All colors MUST be HSL.
   
   .text-3xl-plus {
     font-size: 2.438rem; /* 39px - 30% larger than 30px */
+  
+  /* 30% smaller font size utilities for navigation */
+  .text-xs-minus {
+    font-size: 0.7rem; /* 11.2px - 30% smaller than 16px */
   }
+  
+  .text-sm-minus {
+    font-size: 0.875rem; /* 14px - 30% smaller than 20px */
+  }
+  
+  .text-base-minus {
+    font-size: 0.875rem; /* 14px - 30% smaller than 20px */
+  }
+  
+  .text-lg-minus {
+    font-size: 1.125rem; /* 18px - 30% smaller than 24px */
+  }
+  
+  .text-xl-minus {
+    font-size: 1.25rem; /* 20px - 30% smaller than 28px */
+  }
+  
+  .text-2xl-minus {
+    font-size: 1.4rem; /* 22.4px - 30% smaller than 32px */
+  }
+}
   
   .text-4xl-plus {
     font-size: 2.925rem; /* 46.8px - 30% larger than 36px */
