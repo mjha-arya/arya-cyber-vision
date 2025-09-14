@@ -153,8 +153,8 @@ All colors MUST be HSL.
   }
 
   .hero-heading {
-    font-size: 17px;
-    font-weight: 300;
+    font-size: 10px;
+    font-weight: 150;
     color: #f87060;
     line-height: 1.3;
     margin: 0 0 16px 0;
