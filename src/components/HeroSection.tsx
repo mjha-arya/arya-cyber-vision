@@ -14,13 +14,6 @@ const HeroSection = () => {
         className="hero__mark--tl"
       />
       
-      {/* Right Shield - Reduced Size */}
-      <img
-        src={heroImage}
-        alt=""
-        aria-hidden="true"
-        className="hero__shield"
-      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Centered Content */}

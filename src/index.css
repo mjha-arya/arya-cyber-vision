@@ -154,8 +154,7 @@ All colors MUST be HSL.
   }
 
   /* Keep decorative images behind content */
-  .hero__eagle, .hero__mark--tl, .hero__mark,
-  .hero__shield, .hero__art img {
+  .hero__eagle, .hero__mark--tl, .hero__mark {
     position: absolute;
     z-index: 0;
     pointer-events: none;
@@ -173,20 +172,6 @@ All colors MUST be HSL.
     mix-blend-mode: normal;
     transform-origin: top left;
     transform: scale(0.75);
-  }
-
-  /* Right-side shield - 2× scaled, positioned right */
-  .hero__shield {
-    position: absolute;
-    right: clamp(8px, 2vw, 24px);
-    top: 50%;
-    transform-origin: right center;
-    transform: translateY(-50%) scale(2);
-    width: clamp(160px, 22vw, 280px);
-    height: auto;
-    object-fit: contain;
-    opacity: 0.8;
-    border-radius: 1rem;
   }
 
   /* Centered content block */
