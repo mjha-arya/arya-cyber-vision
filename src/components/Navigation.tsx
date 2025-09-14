@@ -9,7 +9,7 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Home', href: '/', isRoute: true },
-    { name: 'Services', href: '#services', isRoute: false },
+    { name: 'Services', href: '/services', isRoute: false },
     { name: 'Capabilities', href: '/capabilities', isRoute: true },
     { name: 'About Us', href: '/about-us', isRoute: true },
     { name: 'Contact', href: '#contact', isRoute: false },
