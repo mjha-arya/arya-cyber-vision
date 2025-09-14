@@ -56,7 +56,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-[49px] translate-x-[260px]">
+          <div className="hidden md:flex items-center gap-[40px] translate-x-[260px]">
             {navItems.map((item) => renderNavItem(item))}
             <Button className="btn-primary" asChild>
               <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
