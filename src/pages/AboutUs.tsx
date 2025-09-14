@@ -70,7 +70,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="text-center ml-[286px] -mt-7">
-              <div className="w-[340px] h-[550px] rounded-full overflow-hidden border-4 border-primary mx-auto mb-4 mt-[25px]">
+              <div className="w-[340px] h-[570px] rounded-full overflow-hidden border-4 border-primary mx-auto mb-4 mt-[25px]">
                 <img 
                   src="/src/assets/founder-photo-updated.png" 
                   alt="Manish Jha, Founder of Arya Cyber Security Solutions"
