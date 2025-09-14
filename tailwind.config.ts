@@ -44,6 +44,8 @@ export default {
           DEFAULT: "hsl(var(--light-bg))",
           foreground: "hsl(var(--light-bg-foreground))",
         },
+        "nav-text": "hsl(var(--nav-text))",
+        "nav-logo": "hsl(var(--nav-logo))",
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",

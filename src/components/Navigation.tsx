@@ -22,7 +22,7 @@ const Navigation = () => {
         <Link
           key={item.name}
           to={item.href}
-          className="nav-link text-xs-minus font-medium"
+          className="nav-link text-sm font-bold text-nav-text"
         >
           {item.name}
         </Link>
@@ -34,7 +34,7 @@ const Navigation = () => {
         <a
           key={item.name}
           href={href}
-          className="nav-link text-xs-minus font-medium"
+          className="nav-link text-sm font-bold text-nav-text"
         >
           {item.name}
         </a>
@@ -45,12 +45,12 @@ const Navigation = () => {
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center -translate-x-[190px]">
             <div className="flex items-center space-x-1 whitespace-nowrap">
-              <span className="text-lg-minus font-bold text-primary">ARYA</span>
-              <span className="text-xs-minus font-medium text-dark">CYBER SECURITY SOLUTIONS</span>
+              <span className="text-lg font-bold text-nav-logo">ARYA</span>
+              <span className="text-xs font-bold text-nav-logo">CYBER SECURITY SOLUTIONS</span>
             </div>
           </Link>
 
