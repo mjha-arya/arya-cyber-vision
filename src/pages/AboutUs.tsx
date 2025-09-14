@@ -64,7 +64,7 @@ const AboutUs = () => {
         {/* Hero - Founder Bio */}
         <section className="mb-4">
           <div className="grid md:grid-cols-[2fr_1fr] gap-8 items-center">
-            <div className="-mt-[380px] max-w-4xl">
+            <div className="-mt-[380px] max-w-6xl">
               <p className="text-lg leading-relaxed text-foreground">
                 I'm Manish Jha, a SecOps architect with 9+ years securing enterprises across 120+ countries—from leading banks and insurers to media, legal, and energy majors. I build and scale incident response, threat hunting, and cloud-first security that boards trust. My vision: turn security into measurable business value—cut MTTD/MTTR, accelerate audits, and enable faster, safer growth.
               </p>
@@ -89,7 +89,7 @@ const AboutUs = () => {
         {/* Story Section */}
         <section className="mb-2 -mt-[400px]">
           <h2 className="text-2xl font-bold text-foreground mb-6">Our Story</h2>
-          <div className="max-w-4xl">
+          <div className="max-w-6xl">
             <p className="text-lg leading-relaxed text-foreground">
               Founded in UK, Arya Cyber Security Solutions exists to revolutionise the way cyber security services are provided. We deliver automation-led SecOps, pragmatic architectures, and audit-ready reporting that teams can run every day. We already serve SMBs and enterprise clients across regulated and high-growth sectors.
             </p>
