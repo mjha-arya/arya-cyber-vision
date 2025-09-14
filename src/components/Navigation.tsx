@@ -49,7 +49,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center -translate-x-[190px]">
-            <div className="flex items-baseline space-x-2">
+            <div className="flex items-center space-x-2">
               <span className="text-2xl font-bold text-primary">ARYA</span>
               <span className="text-sm font-medium text-dark">CYBER SECURITY SOLUTIONS</span>
             </div>
@@ -58,7 +58,7 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-[37px] translate-x-[260px]">
             {navItems.map((item) => renderNavItem(item))}
-            <Button className="btn-primary" asChild>
+            <Button className="btn-primary-orange" asChild>
               <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
                 Check out Free 7-Minute Quick Cyber Security Risk Assessment
               </a>
@@ -85,7 +85,7 @@ const Navigation = () => {
                   {renderNavItem(item)}
                 </div>
               ))}
-              <Button className="btn-primary w-full mt-4" asChild>
+              <Button className="btn-primary-orange w-full mt-4" asChild>
                 <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
                   Check out the Free 7-Minute Quick Cyber Security Risk Assessment
                 </a>
