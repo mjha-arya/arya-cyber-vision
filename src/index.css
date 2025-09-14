@@ -18,16 +18,16 @@ All colors MUST be HSL.
     --popover-foreground: 210 35% 20%;
 
     /* AryaCyber Brand Colors */
-    --primary: 207 92% 32%; /* #0865A2 */
+    --primary: 14 92% 54%; /* #f6511d */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 207 69% 27%; /* #144E7B */
+    --secondary: 14 92% 54%; /* #f6511d */
     --secondary-foreground: 0 0% 100%;
 
-    --dark: 211 54% 20%; /* #143151 */
+    --dark: 14 92% 54%; /* #f6511d */
     --dark-foreground: 0 0% 100%;
 
-    --mid: 207 61% 44%; /* #2E7EB2 */
+    --mid: 14 92% 54%; /* #f6511d */
     --mid-foreground: 0 0% 100%;
 
     --soft: 207 34% 85%; /* #C9DCE8 */
@@ -39,7 +39,7 @@ All colors MUST be HSL.
     --muted: 207 34% 85%;
     --muted-foreground: 211 35% 45%;
 
-    --accent: 207 61% 44%;
+    --accent: 14 92% 54%; /* #f6511d */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -71,7 +71,7 @@ All colors MUST be HSL.
     --hero-accent: 274 82% 50%; /* #8a17e8 */
     
     /* Orange CTA color */
-    --orange-cta: 30 100% 48%; /* #f77f00 */
+    --orange-cta: 14 92% 54%; /* #f6511d */
   }
 
   .dark {
@@ -252,20 +252,22 @@ All colors MUST be HSL.
   }
 
   .btn-primary {
-    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-mid focus:ring-offset-2;
+    background-color: #f6511d;
+    @apply text-white hover:opacity-90 px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-mid focus:ring-offset-2;
   }
 
   .btn-primary-orange {
-    background-color: hsl(var(--orange-cta));
+    background-color: #f6511d;
     @apply text-white hover:opacity-90 px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-mid focus:ring-offset-2;
   }
 
   .btn-secondary {
-    @apply border-2 border-primary text-primary hover:bg-primary/10 px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-mid focus:ring-offset-2;
+    background-color: #f6511d;
+    @apply text-white hover:opacity-90 border-2 px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-mid focus:ring-offset-2;
   }
 
   .btn-secondary-orange {
-    background-color: hsl(var(--orange-cta));
+    background-color: #f6511d;
     @apply text-white hover:opacity-90 border-2 px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-mid focus:ring-offset-2;
   }
 
