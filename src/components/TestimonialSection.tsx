@@ -3,7 +3,7 @@ import { Star, Quote } from 'lucide-react';
 const TestimonialSection = () => {
   const testimonials = [
     {
-      quote: "Arya Cyber Security Consulting exceeded our expectations by delivering a highly complex project under extremely stringent timelines without compromising on quality. Their team demonstrated exceptional technical expertise, clear communication, and a proactive approach to problem-solving throughout the engagement. The result was a seamless implementation that not only met but enhanced our security posture, enabling us to stay compliant and operational under tight deadlines.",
+      quote: "Arya Cyber Security Consulting exceeded our expectations by delivering a highly complex project under extremely stringent timelines without compromising on quality. Their team demonstrated exceptional technical expertise, clear communication, and a proactive approach to problem-solving throughout the engagement.",
       author: "Steve Kennedy",
       role: "",
       company: "Cloud Sec Ltd, Singapore",
@@ -11,9 +11,9 @@ const TestimonialSection = () => {
       timeframe: "Under tight deadlines",
     },
     {
-      quote: "AryaCyber Security Solutions pinpointed critical gaps in our EDR configuration across a vast estate and delivered a comprehensive, risk‑mitigating plan. Their presentations to the Cloud Design Forum were concise, confident, and impactful under pressure. The closure notes provided were perfectly scoped—clear, to‑the‑point, and audit‑ready, without inviting unnecessary scrutiny. When rapid fixes were needed, AryaCyber's tactical guidance hit the mark, enabling us to meet urgent business demands before refining functionality. Even our toughest network‑segmentation debates were handled with candour and professionalism. Above all, their ability to listen, weigh diverse opinions, and integrate them into robust SecOps processes is truly exceptional.",
+      quote: "AryaCyber Security Solutions pinpointed critical gaps in our EDR configuration across a vast estate and delivered a comprehensive, risk‑mitigating plan. Their presentations to the Cloud Design Forum were concise, confident, and impactful under pressure. The closure notes provided were perfectly scoped—clear, to‑the‑point, and audit‑ready, without inviting unnecessary scrutiny. AryaCyber's tactical guidance hit the mark, enabling us to meet urgent business demands before refining functionality.",
       author: "Marcus Johnson",
-      role: "Lead Security Engineer",
+      role: "Lead Engineer",
       company: "Global Professional Services Firm, UK",
       outcome: "Critical gaps identified",
       timeframe: "Rapid fixes delivered",
