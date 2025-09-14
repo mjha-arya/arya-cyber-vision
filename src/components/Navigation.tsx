@@ -48,8 +48,8 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center translate-x-[1px]">
             <div className="flex items-center space-x-1 whitespace-nowrap">
-              <span className="text-[22px] font-bold text-nav-logo">ARYA</span>
-              <span className="text-[22px] font-bold text-nav-logo">CYBER SECURITY SOLUTIONS</span>
+              <span className="text-[22px] font-bold text-nav-logo">/span>
+              <span className="text-[22px] font-bold text-nav-logo"></span>
             </div>
           </Link>
 
