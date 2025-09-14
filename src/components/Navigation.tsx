@@ -85,7 +85,8 @@ const Navigation = () => {
                 </div>
               ))}
               <Button className="btn-primary w-full mt-4">
-                Book a Security Assessment
+                Free 7-Minute Quick
+Cyber Security Risk Assessment
               </Button>
             </div>
           </div>
