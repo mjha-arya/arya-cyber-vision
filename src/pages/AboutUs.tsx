@@ -69,7 +69,7 @@ const AboutUs = () => {
                 I'm Manish Jha, a SecOps architect with 9+ years securing enterprises across 120+ countries—from leading banks and insurers to media, legal, and energy majors. I build and scale incident response, threat hunting, and cloud-first security that boards trust. My vision: turn security into measurable business value—cut MTTD/MTTR, accelerate audits, and enable faster, safer growth.
               </p>
             </div>
-            <div className="text-center ml-44 mt-30">
+            <div className="text-center ml-44 mt-8">
               <div className="w-[340px] h-[480px] rounded-full overflow-hidden border-4 border-primary mx-auto mb-4">
                 <img 
                   src="/src/assets/founder-photo-new.png" 
