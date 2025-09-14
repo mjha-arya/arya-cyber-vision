@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Shield } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,11 +20,11 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <Shield className="w-5 h-5 text-primary-foreground" />
+          <div className="flex items-center">
+            <div className="flex items-baseline space-x-2">
+              <span className="text-2xl font-bold text-primary">ARYA</span>
+              <span className="text-sm font-medium text-dark">CYBER SECURITY SOLUTIONS</span>
             </div>
-            <span className="text-xl font-bold text-dark">AryaCyber</span>
           </div>
 
           {/* Desktop Navigation */}
