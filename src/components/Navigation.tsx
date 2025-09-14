@@ -8,7 +8,7 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Home', href: '/', isRoute: true },
+    { name: 'Home', href: '/Home', isRoute: true },
     { name: 'Services', href: '/services', isRoute: true },
     { name: 'Capabilities', href: '/capabilities', isRoute: true },
     ,
@@ -59,7 +59,7 @@ const Navigation = () => {
             {navItems.map((item) => renderNavItem(item))}
             <Button variant="orange" asChild>
               <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
-                Check out Free 7-Minute Quick Cyber Security Risk Assessment
+                Free 7-Minute Quick Cyber Security Risk Assessment
               </a>
             </Button>
           </div>
