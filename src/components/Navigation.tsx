@@ -14,7 +14,7 @@ const Navigation = () => {
     { name: 'Industries', href: '#industries', isRoute: false },
     { name: 'Case Studies', href: '#case-studies', isRoute: false },
     { name: 'Insights', href: '#insights', isRoute: false },
-    { name: 'About', href: '#about', isRoute: false },
+    { name: 'About Us', href: '#about', isRoute: false },
     { name: 'Contact', href: '#contact', isRoute: false },
   ];
 
