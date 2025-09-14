@@ -58,8 +58,10 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-[35px] translate-x-[290px]">
             {navItems.map((item) => renderNavItem(item))}
-            <Button className="btn-primary">
-              Book a Security Assessment
+            <Button className="btn-primary" asChild>
+              <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
+                Check out the Free 7-Minute Quick Cyber Security Risk Assessment
+              </a>
             </Button>
           </div>
 
@@ -83,9 +85,10 @@ const Navigation = () => {
                   {renderNavItem(item)}
                 </div>
               ))}
-              <Button className="btn-primary w-full mt-4">
-                Free 7-Minute Quick
-Cyber Security Risk Assessment
+              <Button className="btn-primary w-full mt-4" asChild>
+                <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
+                  Check out the Free 7-Minute Quick Cyber Security Risk Assessment
+                </a>
               </Button>
             </div>
           </div>
