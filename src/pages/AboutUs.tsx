@@ -54,14 +54,7 @@ const AboutUs = () => {
       {/* Header Section */}
       <header className="bg-dark py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <img 
-                src="/src/assets/arya-cyber-logo.png" 
-                alt="Arya Cyber Security Solutions Logo"
-                className="h-36 w-auto"
-              />
-            </div>
+          <div className="text-center">
             <h1 className="text-3xl font-bold text-white">About Us</h1>
           </div>
         </div>
