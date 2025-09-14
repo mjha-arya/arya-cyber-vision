@@ -11,8 +11,7 @@ const Navigation = () => {
     { name: 'Home', href: '/', isRoute: true },
     { name: 'Services', href: '#services', isRoute: false },
     { name: 'Capabilities', href: '/capabilities', isRoute: true },
-    { name: 'Industries', href: '#industries', isRoute: false },
-    { name: 'Insights', href: '#insights', isRoute: false },
+    ,
     { name: 'About Us', href: '/about-us', isRoute: true },
     { name: 'Contact', href: '#contact', isRoute: false },
   ];
@@ -56,7 +55,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-[37px] translate-x-[175px]">
+          <div className="hidden md:flex items-center gap-[37px] translate-x-[120px]">
             {navItems.map((item) => renderNavItem(item))}
             <Button variant="orange" asChild>
               <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
