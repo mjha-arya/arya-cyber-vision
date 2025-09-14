@@ -164,13 +164,13 @@ const AboutUs = () => {
       {/* Sticky CTAs for Mobile */}
       <div className="fixed bottom-0 left-0 right-0 bg-background border-t border-border p-4 md:hidden z-40">
         <div className="flex gap-2">
-          <Button asChild className="btn-primary flex-1">
+          <Button asChild variant="coral" className="flex-1">
             <a href="mailto:manish@aryacybersec.com?subject=Free%20Security%20Assessment%20Request">
               <Mail className="w-4 h-4 mr-2" />
               Book Assessment
             </a>
           </Button>
-          <Button asChild variant="outline" className="flex-1">
+          <Button asChild variant="coral" className="flex-1">
             <a href="tel:+447984130671">
               <Phone className="w-4 h-4 mr-2" />
               Call Now
@@ -183,12 +183,12 @@ const AboutUs = () => {
       <section className="hidden md:block bg-dark py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex justify-center gap-6">
-            <Button asChild className="btn-primary">
+            <Button asChild variant="coral">
               <a href="mailto:manish@aryacybersec.com?subject=Free%20Security%20Assessment%20Request">
                 Book Free Security Assessment
               </a>
             </Button>
-            <Button asChild variant="outline" className="text-white border-white hover:bg-white hover:text-dark">
+            <Button asChild variant="coral">
               <a href="tel:+447984130671">
                 Free Consultation Call
               </a>
