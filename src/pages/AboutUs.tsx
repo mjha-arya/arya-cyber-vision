@@ -78,7 +78,7 @@ const AboutUs = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="ml-[60px] -mt-[40px]">
+              <div className="ml-[60px] -mt-[10px]">
                 <h2 className="text-2xl font-bold text-foreground">Manish Jha</h2>
                 <p className="text-muted-foreground">Founder & SecOps Architect</p>
               </div>
