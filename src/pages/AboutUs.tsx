@@ -91,7 +91,7 @@ const AboutUs = () => {
           <h2 className="text-2xl font-bold text-foreground mb-6">Our Story</h2>
           <div className="max-w-4xl">
             <p className="text-lg leading-relaxed text-foreground">
-              Founded in Brighton, UK, Arya Cyber exists to turn security tools into repeatable outcomes. We deliver automation-led SecOps, pragmatic architectures, and audit-ready reporting that teams can run every day. We already serve SMBs and enterprise clients across regulated and high-growth sectors.
+              Founded in UK, Arya Cyber Security Solutions exists to turn security tools into repeatable outcomes. We deliver automation-led SecOps, pragmatic architectures, and audit-ready reporting that teams can run every day. We already serve SMBs and enterprise clients across regulated and high-growth sectors.
             </p>
           </div>
         </section>
