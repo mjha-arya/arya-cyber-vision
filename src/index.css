@@ -153,25 +153,17 @@ All colors MUST be HSL.
     font-size: clamp(1.375rem, 3vw, 2rem);
   }
 
-  /* Keep decorative images behind content */
-  .hero__eagle, .hero__mark--tl, .hero__mark {
-    position: absolute;
-    z-index: 0;
-    pointer-events: none;
-    user-select: none;
-  }
-
-  /* Golden eagle - positioned top-left */
-  .hero__mark--tl {
+  /* Keep decorative logo behind content */
+  .hero__logo {
     position: absolute;
     top: clamp(12px, 2.5vw, 28px);
     left: clamp(8px, 2vw, 24px);
-    width: clamp(224px, 32vw, 384px);
+    width: clamp(180px, 24vw, 320px);
     height: auto;
-    opacity: 1;
-    mix-blend-mode: normal;
-    transform-origin: top left;
-    transform: scale(0.75);
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.9;
   }
 
   /* Centered content block */
