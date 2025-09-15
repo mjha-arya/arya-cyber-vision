@@ -2,6 +2,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Mail, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import founderPhotoUpdated from '@/assets/founder-photo-updated.png';
 
 const AboutUs = () => {
   const solutions = [
@@ -73,7 +74,7 @@ const AboutUs = () => {
             <div className="text-center ml-[286px] -mt-7">
               <div className="w-[340px] h-[570px] rounded-full overflow-hidden border-4 border-primary mx-auto mb-4 mt-[-58px]">
                 <img 
-                  src="/founder-photo-updated.png" 
+                  src={founderPhotoUpdated} 
                   alt="Manish Jha, Founder of Arya Cyber Security Solutions"
                   className="w-full h-full object-cover"
                   loading="lazy"
