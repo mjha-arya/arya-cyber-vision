@@ -74,10 +74,15 @@ const AboutUs = () => {
             <div className="text-center ml-[286px] -mt-7">
               <div className="w-[340px] h-[570px] rounded-full overflow-hidden border-4 border-primary mx-auto mb-4 mt-[-58px]">
                 <img 
-                  src={founderPhotoUpdated} 
+                  src={`${founderPhotoUpdated}?v=2`} 
                   alt="Manish Jha, Founder of Arya Cyber Security Solutions"
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  onError={(e) => {
+                    console.warn('Founder image failed to load. Falling back to /founder-photo-updated.png');
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = '/founder-photo-updated.png?v=2';
+                  }}
                 />
               </div>
               <div className="ml-[60px] -mt-[10px]">
