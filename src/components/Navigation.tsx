@@ -58,11 +58,6 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-[40px] translate-x-[330px]">
             {navItems.map((item) => renderNavItem(item))}
-            <Button variant="orange" asChild>
-              <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
-                Free 7-Minute Quick Cyber Security Risk Assessment
-              </a>
-            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -85,11 +80,6 @@ const Navigation = () => {
                   {renderNavItem(item)}
                 </div>
               ))}
-              <Button variant="orange" className="w-full mt-4" asChild>
-                <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
-                  Free 7-Minute Quick Cyber Security Risk Assessment
-                </a>
-              </Button>
             </div>
           </div>
         )}
