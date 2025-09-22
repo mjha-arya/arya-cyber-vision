@@ -2,15 +2,15 @@ import { Button } from '@/components/ui/button';
 import { Award, Shield, CheckCircle } from 'lucide-react';
 import heroImage from '@/assets/hero-cyber-security.jpg';
 import uploadedLogo from '@/assets/uploaded-logo.png';
-
 const HeroSection = () => {
-  return (
-    <section id="home" className="hero py-20 bg-background relative">
+  return <section id="home" className="hero py-20 bg-background relative">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Centered Content */}
-        <div className="hero__content" style={{ marginLeft: '120px' }}>
-          <h2 className="hero__eyebrow relative left-[-10px]">Arya Cyber Security solutions</h2>
+        <div className="hero__content" style={{
+        marginLeft: '120px'
+      }}>
+          <h2 className="hero__eyebrow relative left-[-10px]">Arya Cyber Security Solutions</h2>
           <h1 className="hero-heading">
             AI-Powered Proactive Cyber Defense for Modern Businesses
           </h1>
@@ -55,8 +55,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
