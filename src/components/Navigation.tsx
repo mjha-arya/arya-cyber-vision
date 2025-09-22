@@ -22,7 +22,7 @@ const Navigation = () => {
         <Link
           key={item.name}
           to={item.href}
-          className="nav-link text-sm font-medium text-nav-text hover:text-primary transition-colors whitespace-nowrap"
+          className="nav-link text-base font-medium text-nav-text hover:text-primary transition-colors whitespace-nowrap"
         >
           {item.name}
         </Link>
@@ -34,7 +34,7 @@ const Navigation = () => {
         <a
           key={item.name}
           href={href}
-          className="nav-link text-sm font-medium text-nav-text hover:text-primary transition-colors whitespace-nowrap"
+          className="nav-link text-base font-medium text-nav-text hover:text-primary transition-colors whitespace-nowrap"
         >
           {item.name}
         </a>
@@ -53,7 +53,7 @@ const Navigation = () => {
               <img
                 src={uploadedLogo}
                 alt="Arya Cyber Security Solutions"
-                className="h-10 w-auto"
+                className="h-20 w-auto"
               />
             </Link>
             
