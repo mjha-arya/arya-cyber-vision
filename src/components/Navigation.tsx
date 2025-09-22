@@ -56,7 +56,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-[40px] translate-x-[330px]">
+          <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => renderNavItem(item))}
           </div>
 
