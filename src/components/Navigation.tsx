@@ -22,7 +22,7 @@ const Navigation = () => {
         <Link
           key={item.name}
           to={item.href}
-          className="nav-link text-[22px] font-bold text-nav-text whitespace-nowrap"
+          className="nav-link text-sm font-medium text-nav-text hover:text-primary transition-colors whitespace-nowrap"
         >
           {item.name}
         </Link>
@@ -34,7 +34,7 @@ const Navigation = () => {
         <a
           key={item.name}
           href={href}
-          className="nav-link text-[22px] font-bold text-nav-text whitespace-nowrap"
+          className="nav-link text-sm font-medium text-nav-text hover:text-primary transition-colors whitespace-nowrap"
         >
           {item.name}
         </a>
@@ -44,24 +44,27 @@ const Navigation = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-22">
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <img
-              src={uploadedLogo}
-              alt="Arya Cyber Security Solutions"
-              className="h-12 w-auto"
-            />
-          </Link>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => renderNavItem(item))}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-center items-center h-20">
+          {/* Centered Logo and Navigation */}
+          <div className="flex items-center space-x-8">
+            {/* Logo */}
+            <Link to="/" className="flex items-center">
+              <img
+                src={uploadedLogo}
+                alt="Arya Cyber Security Solutions"
+                className="h-10 w-auto"
+              />
+            </Link>
+            
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-8">
+              {navItems.map((item) => renderNavItem(item))}
+            </div>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden absolute right-4">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2 rounded-md text-foreground hover:text-primary"
