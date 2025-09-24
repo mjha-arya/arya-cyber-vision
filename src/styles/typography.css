@@ -10,6 +10,7 @@
 /* Base Typography */
 body {
   @apply bg-background text-foreground;
+  background-color: hsl(var(--background)) !important;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   line-height: 1.6;
 }
