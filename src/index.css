@@ -8,14 +8,14 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 210 35% 20%;
+    --background: 0 0% 15%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 210 35% 20%;
+    --card: 0 0% 20%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 35% 20%;
+    --popover: 0 0% 20%;
+    --popover-foreground: 0 0% 100%;
 
     /* AryaCyber Brand Colors */
     --primary: 207 92% 32%; /* #0865A2 */
