@@ -1,4 +1,4 @@
-import Navigation from '@/components/Navigation';
+import PageLayout from '@/components/layout/PageLayout';
 import HeroSection from '@/components/HeroSection';
 import ServicesGrid from '@/components/ServicesGrid';
 import WhyUsSection from '@/components/WhyUsSection';
@@ -6,12 +6,10 @@ import TestimonialSection from '@/components/TestimonialSection';
 import ToolsEcosystem from '@/components/ToolsEcosystem';
 import CtaBanner from '@/components/CtaBanner';
 import InsightsSection from '@/components/InsightsSection';
-import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <PageLayout>
       <HeroSection />
       <ServicesGrid />
       <WhyUsSection />
@@ -19,8 +17,7 @@ const Index = () => {
       <ToolsEcosystem />
       <CtaBanner />
       <InsightsSection />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

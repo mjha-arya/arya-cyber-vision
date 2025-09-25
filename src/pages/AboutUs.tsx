@@ -128,13 +128,6 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Footer Info */}
-      <div className="bg-dark py-6 text-center">
-        <p className="text-white text-sm">
-          {CONTACT_INFO.website} | {CONTACT_INFO.email} | {CONTACT_INFO.phone}
-        </p>
-      </div>
-
     </PageLayout>
   );
 };
