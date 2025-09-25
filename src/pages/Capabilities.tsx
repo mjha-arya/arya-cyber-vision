@@ -2,8 +2,8 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { CheckCircle, Shield, Award, Users, Mail, Phone, Globe } from 'lucide-react';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import PageLayout from '@/components/layout/PageLayout';
+import { CERTIFICATIONS, CONTACT_INFO, EXTERNAL_LINKS } from '@/lib/constants';
 
 const Capabilities = () => {
   const coreOfferings = [
@@ -39,18 +39,9 @@ const Capabilities = () => {
     }
   ];
 
-  const certifications = [
-    "CEH (Certified Ethical Hacker)",
-    "OSCP (Offensive Security Certified Professional)",
-    "AZ-500 (Microsoft Azure Security Technologies)",
-    "AZ-304 (Microsoft Azure Architect Design)",
-    "AZ-303 (Microsoft Azure Architect Technologies)",
-    "Azure AI"
-  ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <PageLayout>
       
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/5 to-background">
@@ -122,7 +113,7 @@ const Capabilities = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-2">
-                  {certifications.map((cert, index) => (
+                  {CERTIFICATIONS.map((cert, index) => (
                     <Badge key={index} variant="outline" className="mr-2 mb-2 text-sm-plus">
                       {cert}
                     </Badge>
@@ -172,37 +163,37 @@ const Capabilities = () => {
             <div className="flex flex-col items-center">
               <Mail className="w-8 h-8 text-primary mb-3" />
               <h3 className="text-lg-plus font-semibold mb-2 font-condensed uppercase">Email</h3>
-              <a href="mailto:manish@aryacybersec.com" className="text-base-plus text-primary hover:underline">
-                manish@aryacybersec.com
+              <a href={`mailto:${CONTACT_INFO.email}`} className="text-base-plus text-primary hover:underline">
+                {CONTACT_INFO.email}
               </a>
             </div>
             
             <div className="flex flex-col items-center">
               <Phone className="w-8 h-8 text-primary mb-3" />
               <h3 className="text-lg-plus font-semibold mb-2 font-condensed uppercase">Phone</h3>
-              <a href="tel:+447984130671" className="text-base-plus text-primary hover:underline">
-                +44 7984 130671
+              <a href={`tel:${CONTACT_INFO.phone}`} className="text-base-plus text-primary hover:underline">
+                {CONTACT_INFO.phone}
               </a>
             </div>
             
             <div className="flex flex-col items-center">
               <Globe className="w-8 h-8 text-primary mb-3" />
               <h3 className="text-lg-plus font-semibold mb-2 font-condensed uppercase">Website</h3>
-              <a href="https://aryacybersec.com" target="_blank" rel="noopener noreferrer" className="text-base-plus text-primary hover:underline">
-                aryacybersec.com
+              <a href={CONTACT_INFO.fullWebsite} target="_blank" rel="noopener noreferrer" className="text-base-plus text-primary hover:underline">
+                {CONTACT_INFO.website}
               </a>
             </div>
           </div>
 
           <div className="space-y-6">
             <Button variant="orange" className="w-full py-4 text-lg font-semibold" size="lg" asChild>
-              <a href="https://forms.gle/Rg1Y6zaobDXizAgk7" target="_blank" rel="noopener noreferrer">
+              <a href={EXTERNAL_LINKS.capabilitiesAssessment} target="_blank" rel="noopener noreferrer">
                 Free 7-Minute Quick Cyber Security Risk Assessment
               </a>
             </Button>
             
             <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white py-4 text-lg font-semibold" size="lg" asChild>
-              <a href="https://calendar.app.google/4gwrjsKJ9k862yJbA" target="_blank" rel="noopener noreferrer">
+              <a href={EXTERNAL_LINKS.consultation} target="_blank" rel="noopener noreferrer">
                 Book your Free Consultation Call Now
               </a>
             </Button>
@@ -210,8 +201,7 @@ const Capabilities = () => {
         </div>
       </section>
 
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

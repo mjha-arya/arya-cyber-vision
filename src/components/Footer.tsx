@@ -1,14 +1,8 @@
 import { Shield, Mail, Phone, MapPin } from 'lucide-react';
+import { SERVICES_DATA, CONTACT_INFO } from '@/lib/constants';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  const services = [
-    "Managed SOC",
-    "Penetration Testing", 
-    "Incident Response",
-    "Compliance & Governance"
-  ];
 
 
   return (
@@ -33,10 +27,10 @@ const Footer = () => {
           <div className="ml-[60px]">
             <h3 className="text-lg-plus font-semibold mb-4 font-condensed uppercase">Services</h3>
             <ul className="space-y-3">
-              {services.map((service, index) => (
+              {SERVICES_DATA.map((service, index) => (
                 <li key={index}>
                   <a href="#" className="text-base-plus text-dark-foreground/80 hover:text-primary transition-colors">
-                    {service}
+                    {service.title}
                   </a>
                 </li>
               ))}
@@ -51,20 +45,20 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5" />
                 <div>
-                  <p className="text-base-plus text-dark-foreground/80">United Kingdom</p>
-                  <p className="text-sm-plus text-dark-foreground/60">Serving businesses nationwide</p>
+                  <p className="text-base-plus text-dark-foreground/80">{CONTACT_INFO.location}</p>
+                  <p className="text-sm-plus text-dark-foreground/60">{CONTACT_INFO.locationDescription}</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <a href="mailto:manish@aryacybersec.com" className="text-base-plus text-dark-foreground/80 hover:text-primary transition-colors">
-                  manish@aryacybersec.com
+                <a href={`mailto:${CONTACT_INFO.email}`} className="text-base-plus text-dark-foreground/80 hover:text-primary transition-colors">
+                  {CONTACT_INFO.email}
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary" />
-                <a href="tel:+44 7984130671" className="text-base-plus text-dark-foreground/80 hover:text-primary transition-colors">
-                  +44 7984130671
+                <a href={`tel:${CONTACT_INFO.phone}`} className="text-base-plus text-dark-foreground/80 hover:text-primary transition-colors">
+                  {CONTACT_INFO.phone}
                 </a>
               </div>
             </div>

@@ -1,12 +1,10 @@
 import { Mail, Phone, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import PageLayout from '@/components/layout/PageLayout';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <PageLayout>
       
       {/* Contact Section */}
       <section className="py-24 px-4">
@@ -88,8 +86,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

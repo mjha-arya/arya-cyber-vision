@@ -1,5 +1,5 @@
-import { Button } from '@/components/ui/button';
 import { Award, Shield, CheckCircle } from 'lucide-react';
+import ContactActions from '@/components/ui/contact-actions';
 import heroImage from '@/assets/hero-cyber-security.jpg';
 import uploadedLogo from '@/assets/uploaded-logo.png';
 const HeroSection = () => {
@@ -18,18 +18,7 @@ const HeroSection = () => {
           </p>
           
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 btn-row">
-            <Button variant="orange" asChild>
-              <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
-                Free 7-Minute Quick Cyber Security Risk Assessment
-              </a>
-            </Button>
-            <Button variant="orange" asChild>
-              <a href="/capabilities">
-                View Our Capabilities
-              </a>
-            </Button>
-          </div>
+          <ContactActions variant="hero" />
 
           {/* Trust Badges */}
           <div className="pt-8">

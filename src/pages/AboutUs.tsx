@@ -1,56 +1,12 @@
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import { Mail, Phone } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import PageLayout from '@/components/layout/PageLayout';
+import ContactActions from '@/components/ui/contact-actions';
 import founderPhotoUpdated from '@/assets/founder-photo-updated.png';
+import { SOLUTIONS_DATA, CONTACT_INFO } from '@/lib/constants';
 
 const AboutUs = () => {
-  const solutions = [
-    {
-      name: "Penetration Testing",
-      description: "Goal-oriented testing across web, mobile, API, network & cloud with risk-ranked findings and reproducible PoCs."
-    },
-    {
-      name: "Secure Source Code Review", 
-      description: "Manual + SAST/DAST integrated into the SDLC with developer-ready fixes."
-    },
-    {
-      name: "GDPR & Data Protection",
-      description: "DPIAs, RoPA, DPO-as-a-Service, vendor risk & breach response aligned to ICO expectations."
-    },
-    {
-      name: "Security Assessments",
-      description: "Risk/maturity (NIST CSF 2.0, CIS v8), cloud posture, and architecture reviews with prioritized remediation."
-    },
-    {
-      name: "ISO 27001 Readiness",
-      description: "ISMS scope, risk, SoA, controls, internal audit, and certification preparation."
-    },
-    {
-      name: "SOC 2 Compliance", 
-      description: "Gap analysis, control design, evidence management & auditor liaison for Type I/II."
-    },
-    {
-      name: "Security Operations",
-      description: "Modern SOC detection, triage, investigation, response & vuln lifecycle management."
-    },
-    {
-      name: "Security Automation",
-      description: "SOAR playbooks/orchestration that remove analyst toil and cut MTTR at scale."
-    },
-    {
-      name: "Security Architecture",
-      description: "Business-aligned Zero Trust, segmentation & cloud-native guardrails."
-    },
-    {
-      name: "Data Loss Prevention (DLP)",
-      description: "Classification, policy enforcement & encryption across endpoints, cloud & email."
-    }
-  ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <PageLayout>
       
       {/* Header Section */}
       <header className="bg-dark py-6">
@@ -152,7 +108,7 @@ const AboutUs = () => {
         <section className="mb-20">
           <h2 className="text-2xl-plus font-bold text-foreground mb-12 text-center font-condensed uppercase">Our Solutions</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            {solutions.map((solution, index) => (
+            {SOLUTIONS_DATA.map((solution, index) => (
               <div key={index} className="card-service">
                 <h3 className="text-lg-plus font-semibold text-foreground mb-3 font-condensed uppercase">{solution.name}</h3>
                 <p className="text-sm-plus text-muted-foreground leading-relaxed">{solution.description}</p>
@@ -163,50 +119,23 @@ const AboutUs = () => {
       </main>
 
       {/* Sticky CTAs for Mobile */}
-      <div className="fixed bottom-0 left-0 right-0 bg-background border-t border-border p-4 md:hidden z-40">
-        <div className="flex gap-2">
-          <Button asChild variant="coral" className="flex-1">
-            <a href="mailto:manish@aryacybersec.com?subject=Free%20Security%20Assessment%20Request">
-              <Mail className="w-4 h-4 mr-2" />
-              Book Assessment
-            </a>
-          </Button>
-          <Button asChild variant="coral" className="flex-1">
-            <a href="tel:+447984130671">
-              <Phone className="w-4 h-4 mr-2" />
-              Call Now
-            </a>
-          </Button>
-        </div>
-      </div>
+      <ContactActions variant="mobile" />
 
       {/* Desktop CTAs */}
       <section className="hidden md:block bg-dark py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex justify-center gap-6">
-            <Button asChild variant="coral">
-              <a href="mailto:manish@aryacybersec.com?subject=Free%20Security%20Assessment%20Request">
-                Book Free Security Assessment
-              </a>
-            </Button>
-            <Button asChild variant="coral">
-              <a href="tel:+447984130671">
-                Free Consultation Call
-              </a>
-            </Button>
-          </div>
+          <ContactActions variant="desktop" />
         </div>
       </section>
 
       {/* Footer Info */}
       <div className="bg-dark py-6 text-center">
         <p className="text-white text-sm">
-          aryacybersec.com | manish@aryacybersec.com | +44 7984 130671
+          {CONTACT_INFO.website} | {CONTACT_INFO.email} | {CONTACT_INFO.phone}
         </p>
       </div>
 
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 
