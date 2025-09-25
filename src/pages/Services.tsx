@@ -8,9 +8,9 @@ const Services = () => {
     <PageLayout>
       
       {/* Hero Section */}
-      <section className="py-24 px-4">
+      <section className="section-spacing px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl font-bold text-foreground mb-6 font-condensed uppercase">
+          <h1 className="text-5xl font-bold text-foreground title-spacing font-condensed uppercase">
             Comprehensive Cybersecurity Services
           </h1>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
@@ -21,7 +21,7 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-16 px-4">
+      <section className="section-spacing-sm px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {SERVICES_DATA.map((service, index) => (

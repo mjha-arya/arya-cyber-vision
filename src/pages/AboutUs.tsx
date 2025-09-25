@@ -17,10 +17,10 @@ const AboutUs = () => {
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 section-spacing">
         {/* Hero - Founder Bio */}
-        <section className="mb-20">
-          <h2 className="text-2xl-plus font-bold text-foreground mb-12 text-center font-condensed uppercase">About the Founder</h2>
+        <section className="content-spacing">
+          <h2 className="text-2xl-plus font-bold text-foreground title-spacing text-center font-condensed uppercase">About the Founder</h2>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg-plus leading-relaxed text-foreground">
@@ -45,8 +45,8 @@ const AboutUs = () => {
         </section>
 
         {/* Story Section */}
-        <section className="mb-20">
-          <h2 className="text-2xl-plus font-bold text-foreground mb-8 text-center font-condensed uppercase">Our Story</h2>
+        <section className="content-spacing">
+          <h2 className="text-2xl-plus font-bold text-foreground title-spacing text-center font-condensed uppercase">Our Story</h2>
           <div className="max-w-4xl mx-auto">
             <p className="text-lg-plus leading-relaxed text-foreground text-center">
               Founded in UK, Arya Cyber Security Solutions exists to revolutionise the way cyber security services are provided. We deliver automation-led SecOps, pragmatic architectures, and audit-ready reporting that teams can run every day. We already serve SMBs and enterprise clients across regulated and high-growth sectors.
@@ -55,8 +55,8 @@ const AboutUs = () => {
         </section>
 
         {/* Impact & Trust */}
-        <section className="mb-20">
-          <h2 className="text-2xl-plus font-bold text-foreground mb-12 text-center font-condensed uppercase">Impact & Trust</h2>
+        <section className="content-spacing">
+          <h2 className="text-2xl-plus font-bold text-foreground title-spacing text-center font-condensed uppercase">Impact & Trust</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card-service">
               <h3 className="text-xl-plus font-semibold text-foreground mb-4 font-condensed uppercase">Elite Credentials</h3>
@@ -80,8 +80,8 @@ const AboutUs = () => {
         </section>
 
         {/* Approach */}
-        <section className="mb-20">
-          <h2 className="text-2xl-plus font-bold text-foreground mb-12 text-center font-condensed uppercase">Our Approach</h2>
+        <section className="content-spacing">
+          <h2 className="text-2xl-plus font-bold text-foreground title-spacing text-center font-condensed uppercase">Our Approach</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card-service">
               <h3 className="text-xl-plus font-semibold text-foreground mb-4 font-condensed uppercase">Outcomes-First KPIs</h3>
@@ -105,8 +105,8 @@ const AboutUs = () => {
         </section>
 
         {/* Solutions */}
-        <section className="mb-20">
-          <h2 className="text-2xl-plus font-bold text-foreground mb-12 text-center font-condensed uppercase">Our Solutions</h2>
+        <section className="content-spacing">
+          <h2 className="text-2xl-plus font-bold text-foreground title-spacing text-center font-condensed uppercase">Our Solutions</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {SOLUTIONS_DATA.map((solution, index) => (
               <div key={index} className="card-service">
@@ -122,7 +122,7 @@ const AboutUs = () => {
       <ContactActions variant="mobile" />
 
       {/* Desktop CTAs */}
-      <section className="hidden md:block bg-dark py-12">
+      <section className="hidden md:block bg-dark section-spacing-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ContactActions variant="desktop" />
         </div>

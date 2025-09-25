@@ -7,15 +7,15 @@ const Contact = () => {
     <PageLayout>
       
       {/* Contact Section */}
-      <section className="py-24 px-4">
+      <section className="section-spacing px-4">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
-          <h1 className="text-5xl font-bold text-foreground mb-16 font-condensed uppercase">
+          <h1 className="text-5xl font-bold text-foreground content-spacing font-condensed uppercase">
             Ready to Enhance Your Security Posture?
           </h1>
           
           {/* Contact Information Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 content-spacing">
             {/* Email */}
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">

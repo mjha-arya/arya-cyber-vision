@@ -294,6 +294,27 @@ All colors MUST be HSL.
     @apply w-full;
   }
 
+  /* Consistent Spacing System - Tighter spacing for better visual flow */
+  .section-spacing {
+    @apply py-12; /* Reduced from py-16/py-20 */
+  }
+
+  .section-spacing-sm {
+    @apply py-8; /* For smaller sections */
+  }
+
+  .title-spacing {
+    @apply mb-6; /* Consistent title bottom margin - reduced from mb-8/mb-12/mb-16 */
+  }
+
+  .content-spacing {
+    @apply mb-8; /* Standard content spacing - reduced from mb-12/mb-16 */
+  }
+
+  .element-spacing {
+    @apply mb-4; /* For smaller elements - reduced from mb-6/mb-8 */
+  }
+
   /* Responsive adjustments */
   @media (max-width: 768px) {
     :root {

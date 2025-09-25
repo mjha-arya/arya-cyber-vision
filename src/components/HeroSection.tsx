@@ -3,7 +3,7 @@ import ContactActions from '@/components/ui/contact-actions';
 import heroImage from '@/assets/hero-cyber-security.jpg';
 import uploadedLogo from '@/assets/uploaded-logo.png';
 const HeroSection = () => {
-  return <section id="home" className="hero py-20 bg-background relative">
+  return <section id="home" className="hero section-spacing bg-background relative">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Centered Content */}

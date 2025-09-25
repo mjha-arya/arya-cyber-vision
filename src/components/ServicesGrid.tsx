@@ -4,9 +4,9 @@ import { SERVICES_DATA } from '@/lib/constants';
 const ServicesGrid = () => {
 
   return (
-    <section id="services" className="py-20 bg-light-bg">
+    <section id="services" className="section-spacing bg-light-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center title-spacing">
           <h2 className="section-heading mb-4 font-condensed uppercase">
             Comprehensive Cybersecurity Services
           </h2>

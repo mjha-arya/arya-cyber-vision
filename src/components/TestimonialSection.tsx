@@ -21,9 +21,9 @@ const TestimonialSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="section-spacing bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center title-spacing">
           <h2 className="section-heading mb-4 font-condensed uppercase">
             Trusted by Industry Leaders
           </h2>

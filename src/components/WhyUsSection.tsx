@@ -20,9 +20,9 @@ const WhyUsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-dark">
+    <section className="section-spacing bg-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center title-spacing">
           <h2 className="section-heading mb-4 text-dark-foreground font-condensed uppercase">
             Why Leading Businesses Choose AryaCyber
           </h2>

@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-dark text-dark-foreground">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 section-spacing">
         <div className="grid md:grid-cols-3 gap-12">
           {/* Column 1: Logo & Mission */}
           <div className="space-y-6">
