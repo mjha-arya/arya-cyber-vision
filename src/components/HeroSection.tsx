@@ -10,7 +10,7 @@ const HeroSection = () => {
         <h1 className="hero-heading font-condensed uppercase">
           AI-Powered Proactive Cyber Defense for Modern Businesses
         </h1>
-        <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+        <p className="text-lg text-muted-foreground mx-auto">
           UK-based SecOps experts delivering 24/7 monitoring, incident response, 
           and compliance—built on Microsoft security.
         </p>
