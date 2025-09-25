@@ -61,18 +61,22 @@ const AboutUs = () => {
         </div>
       </header>
 
-      <main className=" px-4 sm:px-8 lg:px-12 pt-[12px] pb-12">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Hero - Founder Bio */}
-        <section className="mb-4">
-          <h2 className="text-2xl-plus font-bold text-foreground mb-9 mt-[30px]">About the Founder</h2>
-          <div className="grid md:grid-cols-[2fr_1fr] gap-8 items-center">
-            <div className="-mt-[450px] max-w-6xl">
+        <section className="mb-20">
+          <h2 className="text-2xl-plus font-bold text-foreground mb-12 text-center">About the Founder</h2>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
               <p className="text-lg-plus leading-relaxed text-foreground">
                 I'm Manish Jha, a SecOps architect with 9+ years securing enterprises across 120+ countries—from leading banks and insurers to media, legal, and energy majors. I build and scale incident response, threat hunting, and cloud-first security that boards trust. My vision: turn security into measurable business value—cut MTTD/MTTR, accelerate audits, and enable faster, safer growth.
               </p>
+              <div className="pt-4">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Manish Jha</h3>
+                <p className="text-lg text-muted-foreground">Founder & SecOps Architect</p>
+              </div>
             </div>
-            <div className="text-center ml-[286px] -mt-7">
-              <div className="w-[340px] h-[570px] rounded-full overflow-hidden border-4 border-primary mx-auto mb-4 mt-[-58px]">
+            <div className="flex justify-center">
+              <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary">
                 <img 
                   src={founderPhotoUpdated} 
                   alt="Manish Jha, Founder of Arya Cyber Security Solutions"
@@ -80,27 +84,23 @@ const AboutUs = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="ml-[60px] -mt-[10px]">
-                <h2 className="text-2xl-plus font-bold text-foreground">Manish Jha</h2>
-                <p className="text-base-plus text-muted-foreground">Founder & SecOps Architect</p>
-              </div>
             </div>
           </div>
         </section>
 
         {/* Story Section */}
-        <section className="mb-2 -mt-[400px]">
-          <h2 className="text-2xl-plus font-bold text-foreground mb-6">Our Story</h2>
-          <div className="max-w-6xl">
-            <p className="text-lg-plus leading-relaxed text-foreground">
+        <section className="mb-20">
+          <h2 className="text-2xl-plus font-bold text-foreground mb-8 text-center">Our Story</h2>
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg-plus leading-relaxed text-foreground text-center">
               Founded in UK, Arya Cyber Security Solutions exists to revolutionise the way cyber security services are provided. We deliver automation-led SecOps, pragmatic architectures, and audit-ready reporting that teams can run every day. We already serve SMBs and enterprise clients across regulated and high-growth sectors.
             </p>
           </div>
         </section>
 
         {/* Impact & Trust */}
-        <section className="mb-14 mt-[105px]">
-          <h2 className="text-2xl-plus font-bold text-foreground mb-8">Impact & Trust</h2>
+        <section className="mb-20">
+          <h2 className="text-2xl-plus font-bold text-foreground mb-12 text-center">Impact & Trust</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card-service">
               <h3 className="text-xl-plus font-semibold text-foreground mb-4">Elite Credentials</h3>
@@ -124,8 +124,8 @@ const AboutUs = () => {
         </section>
 
         {/* Approach */}
-        <section className="mb-14">
-          <h2 className="text-2xl-plus font-bold text-foreground mb-8">Our Approach</h2>
+        <section className="mb-20">
+          <h2 className="text-2xl-plus font-bold text-foreground mb-12 text-center">Our Approach</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card-service">
               <h3 className="text-xl-plus font-semibold text-foreground mb-4">Outcomes-First KPIs</h3>
@@ -149,8 +149,8 @@ const AboutUs = () => {
         </section>
 
         {/* Solutions */}
-        <section className="mb-14">
-          <h2 className="text-2xl-plus font-bold text-foreground mb-8">Our Solutions</h2>
+        <section className="mb-20">
+          <h2 className="text-2xl-plus font-bold text-foreground mb-12 text-center">Our Solutions</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {solutions.map((solution, index) => (
               <div key={index} className="card-service">
