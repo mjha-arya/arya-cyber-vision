@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-4 whitespace-nowrap rounded-md text-lg font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-6 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-4 whitespace-nowrap rounded-md text-lg font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-6 [&_svg]:shrink-0 font-condensed",
   {
     variants: {
       variant: {
@@ -15,14 +15,14 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        orange: "bg-[#f6511d] text-white hover:bg-[#f6511d]/90 focus:ring-[#f6511d]/50",
+        orange: "bg-[#0066ff] text-white hover:bg-[#0052cc] focus:ring-[#0066ff]/50",
         coral: "bg-[#ed6a5a] text-white hover:bg-[#ed6a5a]/90 focus:ring-[#ed6a5a]/50",
       },
       size: {
-        default: "h-20 px-8 py-4",
-        sm: "h-18 rounded-md px-6",
-        lg: "h-22 rounded-md px-16",
-        icon: "h-20 w-20",
+        default: "h-16 px-6 py-3",
+        sm: "h-14 rounded-md px-4",
+        lg: "h-18 rounded-md px-12",
+        icon: "h-16 w-16",
       },
     },
     defaultVariants: {
