@@ -76,8 +76,8 @@ const Contact = () => {
             </Button>
             
             <Button 
-              className="w-full max-w-2xl h-14 text-lg font-semibold text-white hover:opacity-90 transition-opacity"
-              style={{ backgroundColor: '#ee4266' }}
+              variant="coral"
+              className="w-full max-w-2xl h-14 text-lg font-semibold"
               asChild
             >
               <a href="https://calendly.com/aryacybersec" target="_blank" rel="noopener noreferrer">
