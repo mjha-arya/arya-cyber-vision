@@ -135,7 +135,8 @@ All colors MUST be HSL.
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
   }
 }
 
@@ -161,20 +162,25 @@ All colors MUST be HSL.
     color: #003049;
     margin: 0 0 12px 0;
     text-align: center;
+    line-height: 1.0;
+    letter-spacing: -0.03em;
   }
 
   .hero-heading {
     font-size: 48px;
     font-weight: 600;
     color: #064789;
-    line-height: 1.3;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
     margin: 0 0 16px 0;
     text-align: center;
   }
 
   .section-heading {
-    @apply text-dark font-semibold leading-tight;
+    @apply text-dark font-semibold;
     font-size: clamp(1.375rem, 3vw, 2rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
   }
 
   /* Keep decorative images behind content */
@@ -238,8 +244,8 @@ All colors MUST be HSL.
   .hero__title {
     max-inline-size: var(--h1-measure);
     margin-inline: auto;
-    line-height: 1.15;
-    letter-spacing: 0.1px;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
     font-size: var(--h1-size);
     margin-bottom: 0.6em;
   }
