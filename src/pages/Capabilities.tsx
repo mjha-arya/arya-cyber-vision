@@ -47,10 +47,10 @@ const Capabilities = () => {
       <section className="section-spacing bg-gradient-to-br from-primary/5 to-background">
         <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl-plus md:text-5xl-plus font-bold text-foreground element-spacing font-condensed uppercase">
+            <h1 className="section-heading element-spacing font-condensed uppercase">
               Arya Cyber Security Solutions
             </h1>
-            <h2 className="text-2xl-plus md:text-3xl-plus font-semibold text-primary title-spacing font-condensed uppercase">
+            <h2 className="section-heading title-spacing font-condensed uppercase">
               Capability Overview
             </h2>
             <p className="text-lg-plus text-muted-foreground">
@@ -65,8 +65,8 @@ const Capabilities = () => {
       <section className="section-spacing-sm bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center title-spacing">
-            <h2 className="text-3xl-plus font-bold text-foreground element-spacing font-condensed uppercase">Core Offerings</h2>
-            <p className="text-lg-plus text-muted-foreground">
+            <h2 className="section-heading element-spacing font-condensed uppercase">Core Offerings</h2>
+            <p className="text-lg text-muted-foreground">
               Comprehensive cybersecurity services tailored to your business needs
             </p>
           </div>
@@ -98,8 +98,8 @@ const Capabilities = () => {
       <section className="section-spacing-sm bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center title-spacing">
-            <h2 className="text-3xl-plus font-bold text-foreground element-spacing font-condensed uppercase">Why Arya Cyber Security Solutions</h2>
-            <p className="text-lg-plus text-muted-foreground">
+            <h2 className="section-heading element-spacing font-condensed uppercase">Why Arya Cyber Security Solutions</h2>
+            <p className="text-lg text-muted-foreground">
               Trusted expertise and cutting-edge solutions
             </p>
           </div>
@@ -109,7 +109,7 @@ const Capabilities = () => {
             <Card className="text-center">
               <CardHeader>
                 <Users className="w-12 h-12 text-primary mx-auto mb-4" />
-                <CardTitle className="text-xl-plus">Certified Team</CardTitle>
+                <CardTitle className="text-xl">Certified Team</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-2">
@@ -126,11 +126,11 @@ const Capabilities = () => {
             <Card className="text-center">
               <CardHeader>
                 <Award className="w-12 h-12 text-primary mx-auto mb-4" />
-                <CardTitle className="text-xl-plus">Proven Experience</CardTitle>
+                <CardTitle className="text-xl">Proven Experience</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl-plus font-bold text-primary mb-2">30+</p>
-                <p className="text-base-plus text-muted-foreground">
+                <p className="text-2xl font-bold text-primary mb-2">30+</p>
+                <p className="text-base text-muted-foreground">
                   Years of combined experience in cybersecurity across our expert team
                 </p>
               </CardContent>
@@ -140,10 +140,10 @@ const Capabilities = () => {
             <Card className="text-center">
               <CardHeader>
                 <Shield className="w-12 h-12 text-primary mx-auto mb-4" />
-                <CardTitle className="text-xl-plus">AI & Automation</CardTitle>
+                <CardTitle className="text-xl">AI & Automation</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-base-plus text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   AI and Automation-led Security Operations for faster response and reduced MTTR
                 </p>
               </CardContent>
@@ -155,7 +155,7 @@ const Capabilities = () => {
       {/* Contact & CTA */}
       <section className="section-spacing-sm bg-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl-plus font-bold text-foreground title-spacing font-condensed uppercase">
+          <h2 className="section-heading title-spacing font-condensed uppercase">
             Ready to Enhance Your Security Posture?
           </h2>
           

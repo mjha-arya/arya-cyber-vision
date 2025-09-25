@@ -10,10 +10,10 @@ const Services = () => {
       {/* Hero Section */}
       <section className="section-spacing px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl font-bold text-foreground title-spacing font-condensed uppercase">
+          <h1 className="section-heading title-spacing font-condensed uppercase">
             Comprehensive Cybersecurity Services
           </h1>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
             From proactive monitoring to incident response, we provide enterprise-grade
             security solutions tailored for modern businesses.
           </p>

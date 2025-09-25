@@ -32,7 +32,7 @@ const AboutUs = () => {
                 I'm Manish Jha, a SecOps architect with 9+ years securing enterprises across 120+ countries—from leading banks and insurers to media, legal, and energy majors. I build and scale incident response, threat hunting, and cloud-first security that boards trust. My vision: turn security into measurable business value—cut MTTD/MTTR, accelerate audits, and enable faster, safer growth.
               </p>
               <div className="pt-4">
-                <h3 className="text-2xl font-bold text-foreground mb-2 font-condensed uppercase">Manish Jha</h3>
+                <h3 className="text-xl font-bold text-foreground mb-2 font-condensed uppercase">Manish Jha</h3>
                 <p className="text-lg text-muted-foreground">Founder & SecOps Architect</p>
               </div>
             </div>
@@ -163,7 +163,7 @@ const AboutUs = () => {
       {/* CTA Section */}
       <section className="section-spacing-sm bg-light-bg">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-foreground element-spacing font-condensed uppercase">
+          <h2 className="section-heading element-spacing font-condensed uppercase">
             Ready to Secure Your Business?
           </h2>
           <p className="text-lg text-muted-foreground title-spacing max-w-2xl mx-auto">

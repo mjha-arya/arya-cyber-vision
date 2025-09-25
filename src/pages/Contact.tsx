@@ -10,7 +10,7 @@ const Contact = () => {
       <section className="section-spacing px-4">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
-          <h1 className="text-5xl font-bold text-foreground content-spacing font-condensed uppercase">
+          <h1 className="section-heading content-spacing font-condensed uppercase">
             Ready to Enhance Your Security Posture?
           </h1>
           
