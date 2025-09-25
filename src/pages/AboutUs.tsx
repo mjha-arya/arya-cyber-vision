@@ -122,8 +122,14 @@ const AboutUs = () => {
       <ContactActions variant="mobile" />
 
       {/* Desktop CTAs */}
-      <section className="hidden md:block bg-dark section-spacing-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="hidden md:block bg-light-bg section-spacing">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-foreground element-spacing font-condensed uppercase">
+            Ready to Secure Your Business?
+          </h2>
+          <p className="text-lg text-muted-foreground title-spacing max-w-2xl mx-auto">
+            Get expert insights and strengthen your cybersecurity posture with our proven solutions.
+          </p>
           <ContactActions variant="desktop" />
         </div>
       </section>
