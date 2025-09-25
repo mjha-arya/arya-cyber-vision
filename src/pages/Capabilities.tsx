@@ -1,9 +1,9 @@
-import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { CheckCircle, Shield, Award, Users, Mail, Phone, Globe } from 'lucide-react';
 import PageLayout from '@/components/layout/PageLayout';
-import { CERTIFICATIONS, CONTACT_INFO, EXTERNAL_LINKS } from '@/lib/constants';
+import ContactActions from '@/components/ui/contact-actions';
+import { CERTIFICATIONS, CONTACT_INFO } from '@/lib/constants';
 
 const Capabilities = () => {
   const coreOfferings = [
@@ -185,19 +185,7 @@ const Capabilities = () => {
             </div>
           </div>
 
-          <div className="space-y-6">
-            <Button variant="orange" className="w-full py-4 text-lg font-semibold" size="lg" asChild>
-              <a href={EXTERNAL_LINKS.capabilitiesAssessment} target="_blank" rel="noopener noreferrer">
-                Free 7-Minute Quick Cyber Security Risk Assessment
-              </a>
-            </Button>
-            
-            <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white py-4 text-lg font-semibold" size="lg" asChild>
-              <a href={EXTERNAL_LINKS.consultation} target="_blank" rel="noopener noreferrer">
-                Book your Free Consultation Call Now
-              </a>
-            </Button>
-          </div>
+          <ContactActions variant="hero" className="justify-center flex-col" />
         </div>
       </section>
 

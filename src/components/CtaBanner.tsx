@@ -1,5 +1,4 @@
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import ContactActions from '@/components/ui/contact-actions';
 
 const CtaBanner = () => {
   return (
@@ -12,12 +11,7 @@ const CtaBanner = () => {
           Get expert insights into your current security posture and discover opportunities 
           to strengthen your defenses.
         </p>
-        <Button className="btn-primary text-lg px-8 py-4" asChild>
-          <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1nPJv3PdpChnZNFFEops3zRxoSUxW6qx6dIy2q8Vnd9_cJvPyrSL9dvcMkBCkWOzFTIp4yIce1" target="_blank" rel="noopener noreferrer">
-            Book your Free Consultation Call Now
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </a>
-        </Button>
+        <ContactActions variant="hero" className="justify-center" />
       </div>
     </section>
   );

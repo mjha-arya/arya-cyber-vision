@@ -1,6 +1,6 @@
 import { Mail, Phone, Globe } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import PageLayout from '@/components/layout/PageLayout';
+import ContactActions from '@/components/ui/contact-actions';
 
 const Contact = () => {
   return (
@@ -62,27 +62,7 @@ const Contact = () => {
           </div>
           
           {/* Call to Action Buttons */}
-          <div className="space-y-4">
-            <Button 
-              variant="orange" 
-              className="w-full max-w-2xl h-14 text-lg font-semibold" 
-              asChild
-            >
-              <a href="https://forms.gle/5q4XWNmrcvGNVCnq8" target="_blank" rel="noopener noreferrer">
-                Free 7-Minute Quick Cyber Security Risk Assessment
-              </a>
-            </Button>
-            
-            <Button 
-              variant="coral"
-              className="w-full max-w-2xl h-14 text-lg font-semibold"
-              asChild
-            >
-              <a href="https://calendly.com/aryacybersec" target="_blank" rel="noopener noreferrer">
-                Book your Free Consultation Call Now
-              </a>
-            </Button>
-          </div>
+          <ContactActions variant="hero" className="justify-center" />
         </div>
       </section>
 
