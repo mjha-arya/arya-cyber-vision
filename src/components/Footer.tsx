@@ -7,29 +7,29 @@ const Footer = () => {
 
   return (
     <footer className="bg-dark text-dark-foreground">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 section-spacing">
-        <div className="grid md:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="grid md:grid-cols-4 gap-8 lg:gap-12">
           {/* Column 1: Logo & Mission */}
-          <div className="space-y-6">
-            <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <Shield className="w-5 h-5 text-primary-foreground" />
+          <div className="md:col-span-2 space-y-4">
+            <div className="flex items-center space-x-2">
+              <div className="w-6 h-6 bg-primary rounded-md flex items-center justify-center">
+                <Shield className="w-4 h-4 text-primary-foreground" />
               </div>
-              <span className="text-xl-plus font-bold">AryaCyber</span>
+              <span className="text-lg font-bold">AryaCyber</span>
             </div>
-            <p className="text-base-plus text-dark-foreground/80 leading-relaxed">
+            <p className="text-sm text-dark-foreground/70 leading-relaxed max-w-md">
               Protecting UK businesses with enterprise-grade cybersecurity solutions. 
               24/7 monitoring, rapid incident response, and Microsoft-first security.
             </p>
           </div>
 
           {/* Column 2: Services */}
-          <div className="ml-[60px]">
-            <h3 className="text-lg-plus font-semibold mb-4 font-condensed uppercase">Services</h3>
-            <ul className="space-y-3">
+          <div>
+            <h3 className="text-sm font-semibold mb-3 font-condensed uppercase text-dark-foreground">Services</h3>
+            <ul className="space-y-2">
               {SERVICES_DATA.map((service, index) => (
                 <li key={index}>
-                  <a href="#" className="text-base-plus text-dark-foreground/80 hover:text-primary transition-colors">
+                  <a href="#" className="text-xs text-dark-foreground/60 hover:text-primary transition-colors">
                     {service.title}
                   </a>
                 </li>
@@ -37,27 +37,26 @@ const Footer = () => {
             </ul>
           </div>
 
-
           {/* Column 3: Contact Info */}
           <div>
-            <h3 className="text-lg-plus font-semibold mb-4 font-condensed uppercase">Contact</h3>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-primary mt-0.5" />
+            <h3 className="text-sm font-semibold mb-3 font-condensed uppercase text-dark-foreground">Contact</h3>
+            <div className="space-y-3">
+              <div className="flex items-start space-x-2">
+                <MapPin className="w-3 h-3 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-base-plus text-dark-foreground/80">{CONTACT_INFO.location}</p>
-                  <p className="text-sm-plus text-dark-foreground/60">{CONTACT_INFO.locationDescription}</p>
+                  <p className="text-xs text-dark-foreground/60">{CONTACT_INFO.location}</p>
+                  <p className="text-xs text-dark-foreground/50">{CONTACT_INFO.locationDescription}</p>
                 </div>
               </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-primary" />
-                <a href={`mailto:${CONTACT_INFO.email}`} className="text-base-plus text-dark-foreground/80 hover:text-primary transition-colors">
+              <div className="flex items-center space-x-2">
+                <Mail className="w-3 h-3 text-primary flex-shrink-0" />
+                <a href={`mailto:${CONTACT_INFO.email}`} className="text-xs text-dark-foreground/60 hover:text-primary transition-colors break-all">
                   {CONTACT_INFO.email}
                 </a>
               </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-primary" />
-                <a href={`tel:${CONTACT_INFO.phone}`} className="text-base-plus text-dark-foreground/80 hover:text-primary transition-colors">
+              <div className="flex items-center space-x-2">
+                <Phone className="w-3 h-3 text-primary flex-shrink-0" />
+                <a href={`tel:${CONTACT_INFO.phone}`} className="text-xs text-dark-foreground/60 hover:text-primary transition-colors">
                   {CONTACT_INFO.phone}
                 </a>
               </div>
@@ -66,19 +65,19 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-dark-foreground/20 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm-plus text-dark-foreground/60">
+        <div className="border-t border-dark-foreground/20 mt-16 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
+            <p className="text-xs text-dark-foreground/50">
               © {currentYear} Arya Cyber Security Solutions. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-sm-plus text-dark-foreground/60 hover:text-primary transition-colors">
+              <a href="#" className="text-xs text-dark-foreground/50 hover:text-primary transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-sm-plus text-dark-foreground/60 hover:text-primary transition-colors">
+              <a href="#" className="text-xs text-dark-foreground/50 hover:text-primary transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="text-sm-plus text-dark-foreground/60 hover:text-primary transition-colors">
+              <a href="#" className="text-xs text-dark-foreground/50 hover:text-primary transition-colors">
                 Cookie Policy
               </a>
             </div>
