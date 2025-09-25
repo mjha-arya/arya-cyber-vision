@@ -32,7 +32,7 @@ const ServicesGrid = () => {
     <section id="services" className="py-20 bg-light-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="section-heading mb-4">
+          <h2 className="section-heading mb-4 font-condensed uppercase">
             Comprehensive Cybersecurity Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -48,7 +48,7 @@ const ServicesGrid = () => {
                 <div className="w-12 h-12 bg-mid/10 rounded-lg flex items-center justify-center mb-4">
                   <service.icon className="w-6 h-6 text-mid" />
                 </div>
-                <h3 className="text-xl font-semibold text-dark mb-3">
+                <h3 className="text-xl font-semibold text-dark mb-3 font-condensed uppercase">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground mb-4">

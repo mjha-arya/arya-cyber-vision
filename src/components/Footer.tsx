@@ -31,7 +31,7 @@ const Footer = () => {
 
           {/* Column 2: Services */}
           <div className="ml-[60px]">
-            <h3 className="text-lg-plus font-semibold mb-4">Services</h3>
+            <h3 className="text-lg-plus font-semibold mb-4 font-condensed uppercase">Services</h3>
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
@@ -46,7 +46,7 @@ const Footer = () => {
 
           {/* Column 3: Contact Info */}
           <div>
-            <h3 className="text-lg-plus font-semibold mb-4">Contact</h3>
+            <h3 className="text-lg-plus font-semibold mb-4 font-condensed uppercase">Contact</h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5" />

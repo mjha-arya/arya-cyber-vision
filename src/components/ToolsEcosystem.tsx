@@ -14,7 +14,7 @@ const ToolsEcosystem = () => {
     <section className="py-16 bg-soft/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="section-heading mb-4">
+          <h2 className="section-heading mb-4 font-condensed uppercase">
             Microsoft Security Ecosystem
           </h2>
           <p className="text-muted-foreground">

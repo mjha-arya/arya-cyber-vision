@@ -56,10 +56,10 @@ const Capabilities = () => {
       <section className="py-20 bg-gradient-to-br from-primary/5 to-background">
         <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl-plus md:text-5xl-plus font-bold text-foreground mb-6">
+            <h1 className="text-4xl-plus md:text-5xl-plus font-bold text-foreground mb-6 font-condensed uppercase">
               Arya Cyber Security Solutions
             </h1>
-            <h2 className="text-2xl-plus md:text-3xl-plus font-semibold text-primary mb-8">
+            <h2 className="text-2xl-plus md:text-3xl-plus font-semibold text-primary mb-8 font-condensed uppercase">
               Capability Overview
             </h2>
             <p className="text-lg-plus text-muted-foreground">
@@ -74,7 +74,7 @@ const Capabilities = () => {
       <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl-plus font-bold text-foreground mb-4">Core Offerings</h2>
+            <h2 className="text-3xl-plus font-bold text-foreground mb-4 font-condensed uppercase">Core Offerings</h2>
             <p className="text-lg-plus text-muted-foreground">
               Comprehensive cybersecurity services tailored to your business needs
             </p>
@@ -107,7 +107,7 @@ const Capabilities = () => {
       <section className="py-16 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl-plus font-bold text-foreground mb-4">Why Arya Cyber Security Solutions</h2>
+            <h2 className="text-3xl-plus font-bold text-foreground mb-4 font-condensed uppercase">Why Arya Cyber Security Solutions</h2>
             <p className="text-lg-plus text-muted-foreground">
               Trusted expertise and cutting-edge solutions
             </p>
@@ -164,14 +164,14 @@ const Capabilities = () => {
       {/* Contact & CTA */}
       <section className="py-16 bg-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl-plus font-bold text-foreground mb-8">
+          <h2 className="text-3xl-plus font-bold text-foreground mb-8 font-condensed uppercase">
             Ready to Enhance Your Security Posture?
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="flex flex-col items-center">
               <Mail className="w-8 h-8 text-primary mb-3" />
-              <h3 className="text-lg-plus font-semibold mb-2">Email</h3>
+              <h3 className="text-lg-plus font-semibold mb-2 font-condensed uppercase">Email</h3>
               <a href="mailto:manish@aryacybersec.com" className="text-base-plus text-primary hover:underline">
                 manish@aryacybersec.com
               </a>
@@ -179,7 +179,7 @@ const Capabilities = () => {
             
             <div className="flex flex-col items-center">
               <Phone className="w-8 h-8 text-primary mb-3" />
-              <h3 className="text-lg-plus font-semibold mb-2">Phone</h3>
+              <h3 className="text-lg-plus font-semibold mb-2 font-condensed uppercase">Phone</h3>
               <a href="tel:+447984130671" className="text-base-plus text-primary hover:underline">
                 +44 7984 130671
               </a>
@@ -187,7 +187,7 @@ const Capabilities = () => {
             
             <div className="flex flex-col items-center">
               <Globe className="w-8 h-8 text-primary mb-3" />
-              <h3 className="text-lg-plus font-semibold mb-2">Website</h3>
+              <h3 className="text-lg-plus font-semibold mb-2 font-condensed uppercase">Website</h3>
               <a href="https://aryacybersec.com" target="_blank" rel="noopener noreferrer" className="text-base-plus text-primary hover:underline">
                 aryacybersec.com
               </a>

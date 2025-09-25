@@ -5,7 +5,7 @@ const CtaBanner = () => {
   return (
     <section className="py-16 bg-light-bg">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="section-heading mb-4">
+        <h2 className="section-heading mb-4 font-condensed uppercase">
           Ready to reduce risk? Let's start with a free security health check.
         </h2>
         <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">

@@ -35,7 +35,7 @@ const InsightsSection = () => {
     <section id="insights" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="section-heading mb-4">
+          <h2 className="section-heading mb-4 font-condensed uppercase">
             Latest Security Insights
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -58,7 +58,7 @@ const InsightsSection = () => {
                   </div>
                 </div>
                 
-                <h3 className="text-xl font-semibold text-dark mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-xl font-semibold text-dark mb-3 group-hover:text-primary transition-colors font-condensed uppercase">
                   {post.title}
                 </h3>
                 

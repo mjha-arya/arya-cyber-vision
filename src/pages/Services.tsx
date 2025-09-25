@@ -54,7 +54,7 @@ const Services = () => {
       {/* Hero Section */}
       <section className="py-24 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl font-bold text-foreground mb-6">
+          <h1 className="text-5xl font-bold text-foreground mb-6 font-condensed uppercase">
             Comprehensive Cybersecurity Services
           </h1>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
@@ -80,7 +80,7 @@ const Services = () => {
                       </div>
                       
                       {/* Title */}
-                      <h3 className="text-xl font-bold text-foreground mb-4">
+                      <h3 className="text-xl font-bold text-foreground mb-4 font-condensed uppercase">
                         {service.title}
                       </h3>
                       

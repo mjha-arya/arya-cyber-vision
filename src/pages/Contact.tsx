@@ -12,7 +12,7 @@ const Contact = () => {
       <section className="py-24 px-4">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
-          <h1 className="text-5xl font-bold text-foreground mb-16">
+          <h1 className="text-5xl font-bold text-foreground mb-16 font-condensed uppercase">
             Ready to Enhance Your Security Posture?
           </h1>
           
@@ -23,7 +23,7 @@ const Contact = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                 <Mail className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">Email</h3>
+              <h3 className="text-xl font-bold text-foreground mb-2 font-condensed uppercase">Email</h3>
               <a 
                 href="mailto:manish@aryacybersec.com"
                 className="text-primary hover:text-primary/80 transition-colors"
@@ -37,7 +37,7 @@ const Contact = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                 <Phone className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">Phone</h3>
+              <h3 className="text-xl font-bold text-foreground mb-2 font-condensed uppercase">Phone</h3>
               <a 
                 href="tel:+447984130671"
                 className="text-primary hover:text-primary/80 transition-colors"
@@ -51,7 +51,7 @@ const Contact = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                 <Globe className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">Website</h3>
+              <h3 className="text-xl font-bold text-foreground mb-2 font-condensed uppercase">Website</h3>
               <a 
                 href="https://aryacybersec.com"
                 target="_blank"

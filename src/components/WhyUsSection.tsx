@@ -23,7 +23,7 @@ const WhyUsSection = () => {
     <section className="py-20 bg-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="section-heading mb-4 text-dark-foreground">
+          <h2 className="section-heading mb-4 text-dark-foreground font-condensed uppercase">
             Why Leading Businesses Choose AryaCyber
           </h2>
           <p className="text-lg text-dark-foreground/80 max-w-2xl mx-auto">
@@ -38,7 +38,7 @@ const WhyUsSection = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <pillar.icon className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold text-dark-foreground mb-4">
+              <h3 className="text-xl font-semibold text-dark-foreground mb-4 font-condensed uppercase">
                 {pillar.title}
               </h3>
               <p className="text-dark-foreground/80 leading-relaxed">
