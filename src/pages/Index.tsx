@@ -10,13 +10,15 @@ import InsightsSection from '@/components/InsightsSection';
 const Index = () => {
   return (
     <PageLayout>
-      <HeroSection />
-      <ServicesGrid />
-      <WhyUsSection />
-      <TestimonialSection />
-      <ToolsEcosystem />
-      <CtaBanner />
-      <InsightsSection />
+      <div className="bg-card text-card-foreground">
+        <HeroSection />
+        <ServicesGrid />
+        <WhyUsSection />
+        <TestimonialSection />
+        <ToolsEcosystem />
+        <CtaBanner />
+        <InsightsSection />
+      </div>
     </PageLayout>
   );
 };
