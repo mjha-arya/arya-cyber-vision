@@ -13,7 +13,7 @@ const NotFound = () => {
 
   return (
     <PageLayout>
-      <div className="bg-card text-card-foreground">
+      <div className="bg-card text-card-foreground w-[80%] mx-auto">
       <div className="flex min-h-screen items-center justify-center">
         <div className="text-center">
           <h1 className="mb-4 section-heading font-condensed uppercase">404</h1>

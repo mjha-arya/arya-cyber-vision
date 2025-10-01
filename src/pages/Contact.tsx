@@ -5,7 +5,7 @@ import ContactActions from '@/components/ui/contact-actions';
 const Contact = () => {
   return (
     <PageLayout>
-      <div className="bg-card text-card-foreground">
+      <div className="bg-card text-card-foreground w-[80%] mx-auto">
       
       {/* Contact Section */}
       <section className="section-spacing px-4">

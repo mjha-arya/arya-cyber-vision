@@ -10,7 +10,7 @@ import InsightsSection from '@/components/InsightsSection';
 const Index = () => {
   return (
     <PageLayout>
-      <div className="bg-card text-card-foreground">
+      <div className="bg-card text-card-foreground w-[80%] mx-auto">
         <HeroSection />
         <ServicesGrid />
         <WhyUsSection />
