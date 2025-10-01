@@ -58,7 +58,7 @@ const Navigation = () => {
             </Link>
             
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8 pb-1">
+            <div className="hidden md:flex items-center space-x-8 pb-1 mt-2">
               {navItems.map((item) => renderNavItem(item))}
             </div>
           </div>
