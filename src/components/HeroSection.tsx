@@ -6,7 +6,6 @@ const HeroSection = () => {
   return (
     <section id="home" className="hero section-spacing bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="hero__eyebrow font-condensed uppercase">Arya Cyber Security Solutions</h2>
         <h1 className="hero-heading font-condensed uppercase">
           AI-Powered Proactive Cyber Defense for Modern Businesses
         </h1>
