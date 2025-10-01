@@ -15,29 +15,29 @@
     --popover-foreground: 210 35% 20%;
 
     /* Brand Colors */
-    --primary: 207 92% 32%; /* #0865A2 */
+    --primary: 197 100% 31%; /* #006f9c */
     --primary-foreground: 0 0% 100%;
-    --secondary: 207 69% 27%; /* #144E7B */
+    --secondary: 197 100% 26%; /* Darker shade of #006f9c */
     --secondary-foreground: 0 0% 100%;
-    --dark: 211 54% 20%; /* #143151 */
+    --dark: 197 100% 20%; /* Even darker shade */
     --dark-foreground: 0 0% 100%;
-    --mid: 207 61% 44%; /* #2E7EB2 */
+    --mid: 197 100% 44%; /* Lighter shade */
     --mid-foreground: 0 0% 100%;
-    --soft: 207 34% 85%; /* #C9DCE8 */
-    --soft-foreground: 211 54% 20%;
-    --light-bg: 215 100% 98%; /* #F8FBFF */
-    --light-bg-foreground: 211 54% 20%;
+    --soft: 197 50% 85%; /* Very light shade */
+    --soft-foreground: 197 100% 20%;
+    --light-bg: 197 100% 98%; /* Almost white with blue tint */
+    --light-bg-foreground: 197 100% 20%;
 
     /* UI Colors */
-    --muted: 207 34% 85%;
-    --muted-foreground: 211 35% 45%;
-    --accent: 207 61% 44%;
+    --muted: 197 50% 85%;
+    --muted-foreground: 197 50% 45%;
+    --accent: 197 100% 44%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
-    --border: 207 34% 85%;
-    --input: 207 34% 85%;
-    --ring: 207 92% 32%;
+    --border: 197 50% 85%;
+    --input: 197 50% 85%;
+    --ring: 197 100% 31%;
     --radius: 0.5rem;
 
     /* Sidebar (keep for UI components) */
