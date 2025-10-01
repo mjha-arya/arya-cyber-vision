@@ -5,7 +5,7 @@ import uploadedLogo from '@/assets/uploaded-logo.png';
 const HeroSection = () => {
   return <section id="home" className="hero section-spacing bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="hero-heading font-condensed uppercase leading-[0.9] max-w-[80%] mx-auto font-extrabold my-8">COMPLETE CYBER SECURITY SOLUTIONS.</h1>
+        <h1 className="hero-heading font-condensed uppercase leading-[0.9] max-w-[80%] mx-auto font-extrabold my-8">COMPLETE CYBER<br />SECURITY SOLUTIONS.</h1>
         <p className="text-lg text-muted-foreground mx-auto my-8 font-medium">
           UK-based Security Operation Experts.<br />
           Integrated with AI.<br />
