@@ -7,6 +7,7 @@ const AboutUs = () => {
 
   return (
     <PageLayout>
+      <div className="bg-card text-card-foreground">
       
       {/* Hero Section - About Us */}
       <section className="section-spacing bg-background">
@@ -175,7 +176,7 @@ const AboutUs = () => {
 
       {/* Mobile CTAs */}
       <ContactActions variant="mobile" />
-
+      </div>
     </PageLayout>
   );
 };

@@ -6,6 +6,7 @@ const Services = () => {
 
   return (
     <PageLayout>
+      <div className="bg-card text-card-foreground">
       
       {/* Hero Section */}
       <section className="section-spacing px-4">
@@ -37,7 +38,7 @@ const Services = () => {
           </div>
         </div>
       </section>
-
+      </div>
     </PageLayout>
   );
 };
