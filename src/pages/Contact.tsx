@@ -5,7 +5,6 @@ import ContactActions from '@/components/ui/contact-actions';
 const Contact = () => {
   return (
     <PageLayout>
-      <div className="bg-card text-card-foreground w-[80%] mx-auto">
       
       {/* Contact Section */}
       <section className="section-spacing px-4">
@@ -66,7 +65,7 @@ const Contact = () => {
           <ContactActions variant="hero" className="justify-center" />
         </div>
       </section>
-      </div>
+
     </PageLayout>
   );
 };

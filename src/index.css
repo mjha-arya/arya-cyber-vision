@@ -7,12 +7,12 @@
 @layer base {
   :root {
     /* Core Colors */
-    --background: 0 0% 25%; /* Dark grey for outer background */
-    --foreground: 0 0% 100%; /* White text */
-    --card: 0 0% 25%; /* Dark grey for cards */
-    --card-foreground: 0 0% 100%; /* White text on cards */
-    --popover: 0 0% 25%;
-    --popover-foreground: 0 0% 100%;
+    --background: 0 0% 100%;
+    --foreground: 210 35% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 35% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 35% 20%;
 
     /* Brand Colors */
     --primary: 197 100% 31%; /* #006f9c */
@@ -24,13 +24,13 @@
     --mid: 197 100% 44%; /* Lighter shade */
     --mid-foreground: 0 0% 100%;
     --soft: 197 50% 85%; /* Very light shade */
-    --soft-foreground: 0 0% 100%;
+    --soft-foreground: 197 100% 20%;
     --light-bg: 197 100% 98%; /* Almost white with blue tint */
-    --light-bg-foreground: 0 0% 100%;
+    --light-bg-foreground: 197 100% 20%;
 
     /* UI Colors */
-    --muted: 0 0% 40%;
-    --muted-foreground: 0 0% 85%;
+    --muted: 197 50% 85%;
+    --muted-foreground: 197 50% 45%;
     --accent: 197 100% 44%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;

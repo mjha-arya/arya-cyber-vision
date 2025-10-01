@@ -42,7 +42,6 @@ const Capabilities = () => {
 
   return (
     <PageLayout>
-      <div className="bg-card text-card-foreground w-[80%] mx-auto">
       
       {/* Hero Section */}
       <section className="section-spacing bg-gradient-to-br from-primary/5 to-background">
@@ -189,7 +188,7 @@ const Capabilities = () => {
           <ContactActions variant="hero" className="justify-center flex-col" />
         </div>
       </section>
-      </div>
+
     </PageLayout>
   );
 };
