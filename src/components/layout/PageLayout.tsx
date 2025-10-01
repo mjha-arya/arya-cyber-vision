@@ -14,11 +14,13 @@ interface PageLayoutProps {
 const PageLayout = ({ children, className = "" }: PageLayoutProps) => {
   return (
     <div className={`min-h-screen bg-background ${className}`}>
-      <Navigation />
-      <div className="w-full lg:w-[80%] mx-auto bg-card text-card-foreground">
-        {children}
+      <div>
+        <Navigation />
+        <div className="w-full lg:w-[80%] mx-auto bg-card text-card-foreground">
+          {children}
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };
