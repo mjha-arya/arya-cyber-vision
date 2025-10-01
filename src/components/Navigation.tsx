@@ -22,7 +22,7 @@ const Navigation = () => {
         <Link
           key={item.name}
           to={item.href}
-          className="nav-link text-base font-medium text-nav-text hover:text-primary transition-colors whitespace-nowrap"
+          className="nav-link text-base font-medium text-primary hover:text-primary/80 transition-colors whitespace-nowrap"
         >
           {item.name}
         </Link>
@@ -34,7 +34,7 @@ const Navigation = () => {
         <a
           key={item.name}
           href={href}
-          className="nav-link text-base font-medium text-nav-text hover:text-primary transition-colors whitespace-nowrap"
+          className="nav-link text-base font-medium text-primary hover:text-primary/80 transition-colors whitespace-nowrap"
         >
           {item.name}
         </a>
@@ -45,9 +45,9 @@ const Navigation = () => {
   return (
     <nav className="sticky top-0 z-50 bg-background border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center items-center h-20">
+        <div className="flex justify-center items-end h-28">
           {/* Centered Logo and Navigation */}
-          <div className="flex items-center space-x-8">
+          <div className="flex items-end space-x-8">
             {/* Logo */}
             <Link to="/" className="flex items-center">
               <img
@@ -58,7 +58,7 @@ const Navigation = () => {
             </Link>
             
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-8 pb-1">
               {navItems.map((item) => renderNavItem(item))}
             </div>
           </div>
