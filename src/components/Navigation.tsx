@@ -53,7 +53,7 @@ const Navigation = () => {
               <img
                 src={uploadedLogo}
                 alt="Arya Cyber Security Solutions"
-                className="h-20 w-auto"
+                className="h-14 w-auto"
               />
             </Link>
             
