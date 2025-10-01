@@ -12,7 +12,7 @@ const Navigation = () => {
     { name: 'Home', href: '/', isRoute: true },
     { name: 'Services', href: '/services', isRoute: true },
     { name: 'Capabilities', href: '/capabilities', isRoute: true },
-    { name: 'About Us', href: '/about-us', isRoute: true },
+    { name: 'About', href: '/about-us', isRoute: true },
     { name: 'Contact', href: '/contact', isRoute: true },
   ];
 
@@ -45,7 +45,7 @@ const Navigation = () => {
   return (
     <nav className="sticky top-0 z-50 bg-background border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center items-end h-28">
+        <div className="flex justify-center items-center h-28">
           {/* Centered Logo and Navigation */}
           <div className="flex items-end space-x-8">
             {/* Logo */}
@@ -58,7 +58,7 @@ const Navigation = () => {
             </Link>
             
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8 pb-1">
+            <div className="hidden md:flex items-center space-x-8 pb-1 mt-2">
               {navItems.map((item) => renderNavItem(item))}
             </div>
           </div>
