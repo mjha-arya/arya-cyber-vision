@@ -44,23 +44,20 @@ const Navigation = () => {
 
   return (
     <nav className="relative z-50 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center h-28">
-          {/* Centered Logo and Navigation */}
-          <div className="flex items-center space-x-8">
-            {/* Logo */}
-            <Link to="/" className="flex items-center">
-              <img
-                src={uploadedLogo}
-                alt="Arya Cyber Security Solutions"
-                className="h-14 w-auto"
-              />
-            </Link>
-            
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex items-end space-x-8 h-14">
-              {navItems.map((item) => renderNavItem(item))}
-            </div>
+      <div className="w-full lg:w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-28">
+          {/* Logo - Left Aligned */}
+          <Link to="/" className="flex items-center">
+            <img
+              src={uploadedLogo}
+              alt="Arya Cyber Security Solutions"
+              className="h-14 w-auto"
+            />
+          </Link>
+          
+          {/* Desktop Navigation - Right Aligned */}
+          <div className="hidden md:flex items-center space-x-8">
+            {navItems.map((item) => renderNavItem(item))}
           </div>
 
           {/* Mobile menu button */}
