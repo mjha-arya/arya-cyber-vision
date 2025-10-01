@@ -15,7 +15,9 @@ const PageLayout = ({ children, className = "" }: PageLayoutProps) => {
   return (
     <div className={`min-h-screen bg-background ${className}`}>
       <Navigation />
-      {children}
+      <div className="w-[80%] mx-auto">
+        {children}
+      </div>
       <Footer />
     </div>
   );
