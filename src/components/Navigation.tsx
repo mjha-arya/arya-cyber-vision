@@ -45,13 +45,13 @@ const Navigation = () => {
   return (
     <nav className="relative z-50 bg-background border-b-2 border-primary">
       <div className="w-full lg:w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-end h-28 pb-4">
+        <div className="flex justify-between items-end h-16 md:h-28 pb-2 md:pb-4">
           {/* Logo - Left Aligned */}
           <Link to="/" className="flex items-center">
             <img
               src={uploadedLogo}
               alt="Arya Cyber Security Solutions"
-              className="h-14 w-auto"
+              className="h-10 md:h-14 w-auto"
             />
           </Link>
           
