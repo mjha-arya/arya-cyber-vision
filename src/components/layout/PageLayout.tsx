@@ -13,9 +13,9 @@ interface PageLayoutProps {
  */
 const PageLayout = ({ children, className = "" }: PageLayoutProps) => {
   return (
-    <div className={`min-h-screen bg-[#262626] ${className}`}>
+    <div className={`min-h-screen bg-background ${className}`}>
       <Navigation />
-      <div className="w-full lg:w-[80%] mx-auto bg-gray-800">
+      <div className="w-full lg:w-[80%] mx-auto bg-card text-card-foreground">
         {children}
       </div>
       <Footer />
