@@ -11,8 +11,7 @@ const ServicesGrid = () => {
             Comprehensive Cybersecurity Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From proactive monitoring to incident response, we provide enterprise-grade 
-            security solutions tailored for modern businesses.
+            From proactive monitoring to rapid response, we deliver enterprise-grade security tailored to modern business needs.
           </p>
         </div>
 

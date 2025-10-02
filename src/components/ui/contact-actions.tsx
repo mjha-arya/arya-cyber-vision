@@ -3,7 +3,7 @@ import { Mail, Phone } from 'lucide-react';
 import { CONTACT_INFO, EXTERNAL_LINKS } from '@/lib/constants';
 
 interface ContactActionsProps {
-  variant?: 'mobile' | 'desktop' | 'hero';
+  variant?: 'mobile' | 'desktop' | 'hero' | 'cta';
   className?: string;
 }
 
@@ -39,6 +39,18 @@ const ContactActions = ({ variant = 'desktop', className = "" }: ContactActionsP
         <Button variant="orange" asChild>
           <a href="/capabilities">
             View Our Capabilities
+          </a>
+        </Button>
+      </div>
+    );
+  }
+
+  if (variant === 'cta') {
+    return (
+      <div className={`flex flex-col sm:flex-row gap-4 justify-center items-center ${className}`}>
+        <Button variant="coral" asChild>
+          <a href={EXTERNAL_LINKS.consultation}>
+            Book a Free Consultation Call
           </a>
         </Button>
       </div>

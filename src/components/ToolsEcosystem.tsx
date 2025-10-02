@@ -18,7 +18,7 @@ const ToolsEcosystem = () => {
             Microsoft Security Ecosystem
           </h2>
           <p className="text-muted-foreground">
-            Leveraging the full power of Microsoft's security suite for comprehensive protection
+            Harnessing the full power of Microsoft's security suite for comprehensive protection.
           </p>
         </div>
 

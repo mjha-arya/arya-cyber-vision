@@ -5,15 +5,15 @@ import uploadedLogo from '@/assets/uploaded-logo.png';
 const HeroSection = () => {
   return <section id="home" className="hero section-spacing bg-background text-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-[80%]">
-        <h1 className="hero-heading uppercase leading-[0.9] max-w-[80%] mx-auto font-extrabold">COMPLETE CYBER<br />SECURITY SOLUTIONS.</h1>
-        <p className="text-lg text-muted-foreground mx-auto my-8 font-bold">
-          UK-based Security Operation Experts.<br />
-          Integrated with AI.<br />
-          Delivering 24.7 Monitoring, Incident Response, and Compliance.<br />
-          Built on Microsoft security.
+        <h1 className="hero-heading uppercase leading-[0.9] max-w-[80%] mx-auto font-extrabold">Arya Cyber<br />Security Solutions</h1>
+        <h2 className="text-2xl md:text-3xl text-foreground mx-auto my-6 font-semibold">
+          AI-Powered Proactive Cyber Defence for Modern Businesses
+        </h2>
+        <p className="text-lg text-muted-foreground mx-auto my-8">
+          UK-based SecOps specialists providing 24/7 monitoring, incident response, and compliance—built on Microsoft security.
         </p>
         
-        <ContactActions variant="hero" />
+        <ContactActions variant="cta" />
 
         {/* Trust Badges */}
         <div className="pt-8">

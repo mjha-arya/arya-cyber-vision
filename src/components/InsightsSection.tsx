@@ -3,7 +3,7 @@ import { Calendar, ArrowRight } from 'lucide-react';
 const InsightsSection = () => {
   const posts = [
     {
-      title: "Microsoft Defender for Business: Small Business Security Guide",
+      title: "Microsoft Defender for Business: A Guide for SMEs",
       excerpt: "Learn how to implement comprehensive endpoint protection for small to medium businesses using Microsoft's latest security tools.",
       tag: "Blue Team",
       date: "December 8, 2024",
@@ -38,10 +38,6 @@ const InsightsSection = () => {
           <h2 className="section-heading mb-4 font-condensed uppercase">
             Latest Security Insights
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Stay informed with expert analysis, best practices, and the latest 
-            cybersecurity trends from our team of security professionals.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

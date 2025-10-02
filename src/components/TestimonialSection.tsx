@@ -3,20 +3,20 @@ import { Star, Quote } from 'lucide-react';
 const TestimonialSection = () => {
   const testimonials = [
     {
-      quote: "Arya Cyber Security Consulting exceeded our expectations by delivering a highly complex project under extremely stringent timelines without compromising on quality. Their team demonstrated exceptional technical expertise, clear communication, and a proactive approach to problem-solving throughout the engagement.",
+      quote: "Arya Cyber Security Consulting exceeded expectations by delivering a highly complex project under stringent deadlines without compromising on quality.",
       author: "Steve Kennedy",
       role: "",
       company: "Cloud Sec Ltd, Singapore",
-      outcome: "Enhanced security posture",
-      timeframe: "Under tight deadlines",
+      outcome: "Strengthened security posture",
+      timeframe: "Delivered on time and to specification",
     },
     {
-      quote: "AryaCyber Security Solutions pinpointed critical gaps in our EDR configuration across a vast estate and delivered a comprehensive, risk‑mitigating plan. Their presentations to the Cloud Design Forum were concise, confident, and impactful under pressure. The closure notes provided were perfectly scoped—clear, to‑the‑point, and audit‑ready, without inviting unnecessary scrutiny. AryaCyber's tactical guidance hit the mark, enabling us to meet urgent business demands before refining functionality.",
+      quote: "AryaCyber identified critical gaps in our EDR configuration and delivered a practical, risk-reducing plan. Their closure notes were concise, audit-compliant, and business-ready.",
       author: "Marcus Johnson",
       role: "Lead Engineer",
       company: "Global Professional Services Firm, UK",
-      outcome: "Critical gaps identified",
-      timeframe: "Rapid fixes delivered",
+      outcome: "Critical vulnerabilities identified",
+      timeframe: "Rapid, effective remediation",
     },
   ];
 
@@ -25,12 +25,8 @@ const TestimonialSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center title-spacing">
           <h2 className="section-heading mb-4 font-condensed uppercase">
-            Trusted by Industry Leaders
+            What Our Clients Say
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            See how we've helped organizations strengthen their cybersecurity posture 
-            and reduce risk across their operations.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">

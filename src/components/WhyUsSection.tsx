@@ -4,18 +4,23 @@ const WhyUsSection = () => {
   const pillars = [
     {
       icon: Clock,
-      title: "24/7 Monitoring by UK-based SOC",
-      description: "Round-the-clock protection with local expertise and rapid response times.",
+      title: "24/7 UK-Based SOC",
+      description: "Round-the-clock monitoring and local expertise.",
     },
     {
       icon: Shield,
-      title: "Microsoft-first Security Stack",
-      description: "Built on industry-leading Microsoft security technologies and best practices.",
+      title: "Microsoft-First Security Stack",
+      description: "Built on leading Microsoft technologies.",
     },
     {
       icon: TrendingUp,
-      title: "Measurable Risk Reduction",
-      description: "Quantifiable security improvements with detailed reporting and metrics.",
+      title: "Tangible Risk Reduction",
+      description: "Measurable security improvements with clear reporting.",
+    },
+    {
+      icon: Shield,
+      title: "Trusted by Leading Organisations",
+      description: "Proven success in strengthening resilience.",
     },
   ];
 
@@ -24,15 +29,14 @@ const WhyUsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center title-spacing">
           <h2 className="section-heading mb-4 text-dark-foreground font-condensed uppercase">
-            Why Leading Businesses Choose AryaCyber
+            Why Businesses Choose AryaCyber
           </h2>
           <p className="text-lg text-dark-foreground/80 max-w-2xl mx-auto">
-            Experience the difference of working with a dedicated UK cybersecurity partner 
-            committed to your business success.
+            Bullet-style highlights demonstrating our value proposition.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {pillars.map((pillar, index) => (
             <div key={index} className="text-center group">
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">

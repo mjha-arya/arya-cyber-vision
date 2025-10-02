@@ -5,25 +5,25 @@ export const SERVICES_DATA = [
   {
     icon: Shield,
     title: "Managed SOC",
-    description: "24/7 detection & response powered by Microsoft Sentinel and Defender.",
+    description: "24/7 detection & response with Microsoft Sentinel and Defender.",
     features: ["Microsoft Sentinel", "Defender", "Entra"],
   },
   {
     icon: Search,
     title: "Penetration Testing",
-    description: "Real-world attack simulation across web, cloud, and people.",
+    description: "Real-world attack simulations across web, cloud, and people.",
     features: ["Web", "Cloud", "Social Engineering"],
   },
   {
     icon: AlertTriangle,
     title: "Incident Response",
-    description: "Breach triage, containment, forensics—fast.",
+    description: "Fast triage, containment, and forensic investigation.",
     features: ["IR Retainer", "1-hour SLA", "Forensics"],
   },
   {
     icon: FileCheck,
     title: "Compliance & Governance",
-    description: "Accelerate ISO 27001, Cyber Essentials Plus, and NCSC CAF.",
+    description: "Accelerate ISO 27001, Cyber Essentials Plus, and NCSC CAF readiness.",
     features: ["ISO 27001", "NCSC CAF", "Cyber Essentials Plus"],
   },
 ];
