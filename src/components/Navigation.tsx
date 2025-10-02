@@ -64,7 +64,7 @@ const Navigation = () => {
           <div className="md:hidden absolute right-4">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 rounded-md text-foreground hover:text-primary"
+              className="p-2 rounded-md text-primary hover:text-primary/80"
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
