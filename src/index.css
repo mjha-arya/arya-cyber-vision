@@ -8,11 +8,11 @@
   :root {
     /* Core Colors */
     --background: 0 0% 100%;
-    --foreground: 210 35% 20%;
+    --foreground: 0 0% 25%;
     --card: 0 0% 100%;
-    --card-foreground: 210 35% 20%;
+    --card-foreground: 0 0% 25%;
     --popover: 0 0% 100%;
-    --popover-foreground: 210 35% 20%;
+    --popover-foreground: 0 0% 25%;
 
     /* Brand Colors */
     --primary: 197 100% 31%; /* #006f9c */
