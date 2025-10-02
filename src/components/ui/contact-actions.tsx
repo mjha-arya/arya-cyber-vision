@@ -37,11 +37,6 @@ const ContactActions = ({ variant = 'desktop', className = "" }: ContactActionsP
     return (
       <div className={`flex flex-col sm:flex-row gap-4 justify-center items-center ${className}`}>
         <Button variant="orange" asChild>
-          <a href={EXTERNAL_LINKS.riskAssessment} target="_blank" rel="noopener noreferrer">
-            Free 7-Minute Quick Cyber Security Risk Assessment
-          </a>
-        </Button>
-        <Button variant="orange" asChild>
           <a href="/capabilities">
             View Our Capabilities
           </a>
