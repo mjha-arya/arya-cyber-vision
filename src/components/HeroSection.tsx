@@ -4,7 +4,7 @@ import heroImage from '@/assets/hero-cyber-security.jpg';
 import uploadedLogo from '@/assets/uploaded-logo.png';
 const HeroSection = () => {
   return <section id="home" className="hero section-spacing bg-background text-foreground">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-[80%]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary mb-6 uppercase">
           Complete Cyber Security Solutions
         </h1>
