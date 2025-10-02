@@ -19,7 +19,7 @@
     --primary-foreground: 0 0% 100%;
     --secondary: 197 100% 26%; /* Darker shade of #006f9c */
     --secondary-foreground: 0 0% 100%;
-    --dark: 197 100% 20%; /* Even darker shade */
+    --dark: 0 0% 0%; /* Black */
     --dark-foreground: 0 0% 100%;
     --mid: 197 100% 44%; /* Lighter shade */
     --mid-foreground: 0 0% 100%;
