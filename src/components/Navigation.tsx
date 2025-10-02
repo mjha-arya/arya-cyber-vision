@@ -45,7 +45,7 @@ const Navigation = () => {
   return (
     <nav className="relative z-50 bg-background border-b-2 border-primary">
       <div className="w-full lg:w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-28">
+        <div className="flex justify-between items-end h-28 pb-4">
           {/* Logo - Left Aligned */}
           <Link to="/" className="flex items-center">
             <img
