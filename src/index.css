@@ -105,12 +105,13 @@
   }
 
   .hero-heading {
-    font-size: clamp(3.675rem, 6.3vw, 6.3rem);
+    font-size: clamp(4.5rem, 8vw, 8rem);
     font-weight: 600;
     color: hsl(var(--primary));
     line-height: 1.1;
     letter-spacing: -0.025em;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
   }
 
